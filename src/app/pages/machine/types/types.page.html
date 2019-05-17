@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="machine"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>Types of Machine Learning</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+       
+
+      <p>Machine learning algorithms can be divided into three broad categories:</p>
+      <p><ion-text color="dark">Supervised learning: </ion-text>The computer is presented with example inputs and their desired outputs, and the goal is to learn a general rule that maps inputs to outputs. An example is an email spam filter.</p>
+      
+      <p><ion-text color="dark">Unsupervised learning: </ion-text>No labels are given to the learning algorithm, leaving it on its own to find structure in its input (discovering hidden patterns in data). For example, imagine having data about all cars and their buyers. The system can find patterns and identify that, for example, people in the suburbs prefer SUVs with petrol engines, but people who live near to downtown, prefer smaller electrical cars. Knowing this can help the system predict who will buy which car.
+      
+      <p><ion-text color="dark">Reinforcement learning:</ion-text> A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). The program is provided feedback in terms of rewards and punishments as it navigates its problem space.
+      
+      <p>Another categorization of machine learning tasks arises when considering the desired output.</p>
+      <p>In <ion-text color="dark">classification,</ion-text> (typically in supervised learning) inputs are divided into two or more classes. Spam filtering is an example of classification, where the inputs are emails and the classes are "spam" and "not spam".</p>
+      
+      <p>In<ion-text color="dark"> regression, </ion-text>also a supervised problem, we predict continuously-valued outputs. For example, predicting house prices or stock prices.</p>
+      
+      <p>In <ion-text color="dark">clustering, </ion-text>a set of inputs is to be divided into groups. Unlike in classification, the groups are not known beforehand, making this typically an unsupervised task. An example is customer segmentation</p>.
+      
+      <p><ion-text color="dark">Density estimation  </ion-text> finds the distribution of inputs in some space. For example, having diabetes test results of a specific number of people, we can estimate the distribution for the whole population.</p>
+      
+     <p> <ion-text color="dark">Dimensionality reduction  </ion-text>simplifies inputs by mapping them into a lower-dimensional space. Topic modeling is a related problem where a program is given a list of human language documents and is tasked to find out which documents cover similar topics.</p>
+</ion-text>
+
+
+<ion-card color="warning">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+        
+      </ion-col>
+      <ion-col size ="10">
+        <p>Understanding the type of problem you are trying to solve is key to identifying the right algorithms to use.</p>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card> 
+
+</ion-card-content>
+</ion-card>
+<ion-toolbar>
+<ion-button href="/neural" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

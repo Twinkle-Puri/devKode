@@ -1,0 +1,63 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Branches</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-text>
+        
+        <p>Branches are a very important part of git.</p> 
+        <p><ion-text color="dark"> Branching</ion-text> allows to make a "copy" of your working project and change it without affecting the<ion-text color="dark"> main branch, </ion-text>(master branch), giving an opportunity to work on the same project with different commits. </p>
+        <p> When you want to add a new feature or fix a bug - no matter how big or how small - you create a new branch to encapsulate your changes. </p>
+         
+        <p> After the feature is done, you can merge it with the <ion-text color="dark">master</ion-text> branch.</p>
+         <img src="../../assets/image/branches1.jpg" />
+         <p>Creating a new branch is done using the <ion-text color="dark">branch</ion-text> command: </p>
+           <ion-toolbar color="dark">
+             <p>git branch my_new_branch </p>
+           </ion-toolbar>
+           <p>Then we need to switch to the branch using the <ion-text color="dark">checkout</ion-text> command: </p>
+               <ion-toolbar color="dark">
+                 <p>git checkout my_new_branch</p>
+               </ion-toolbar>
+               <p>There is a shortcut to create and switch to a new branch:</p>
+                   <ion-toolbar color="dark">
+                     <p>git checkout -b my_new_branch </p>
+                   </ion-toolbar>
+                   <p>Now, every change made in the new branch called <ion-text color="dark">my_new_branch </ion-text>won't affect the master branch.</p> 
+                     <p> This means you can safely work on the project without breaking anything. Each branch has its own history, staging area and working directory.</p>
+</ion-text>
+
+
+<ion-card color="warning">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+        
+      </ion-col>
+      <ion-col size ="10">
+        <p>In order to see the list of your branches, run the <ion-text color="dark">git branch</ion-text> command in the project directory.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+ <ion-toolbar>
+    <ion-button href="/amend" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

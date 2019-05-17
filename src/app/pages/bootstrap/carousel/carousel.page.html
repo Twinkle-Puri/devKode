@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="bootstrap"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title> Carousel</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+
+
+      <p>A <ion-text color ="dark">carousel</ion-text> is used to cycle through content. It is also referred to as a slideshow because of the way it showcases videos and images. </p>
+      <p>The basic Bootstrap carousel has indicators (little circles) for the number of slides and the active slide and controls for manually moving backwards or forwards through a slideshow.</p>
+      <p>To build a carousel, start with a <ion-text color ="dark"> div </ion-text>with an <ion-text color ="dark">id </ion-text>for referring to the carousel, the <ion-text color ="dark">class="carousel",</ion-text> and attribute <ion-text color ="dark">data-ride="carousel"</ion-text> for animating the carousel as soon as the page loads.</p>
+      
+      <p>Within the outer div are the indicators, media content, and controls:</p>
+       <p>- The indicators are an ordered list with<ion-text color ="dark"> class="carousel-indicators".</ion-text> Each list item has a <ion-text color ="dark">data-target</ion-text> attribute that points to the carousel id, and a <ion-text color ="dark">data-slide-to </ion-text>attribute that indicates which slide to display when clicked.</p>
+       <p>- The media content is specified within a div with class<ion-text color ="dark"> carousel-inner.</ion-text></p>
+       <p>- Within the<ion-text color ="dark"> carousel-inner</ion-text> div are separate div elements of class item for each media item. One item must also include the active class. Captions for each slide are placed in a div with class carousel-caption within the item's div.</p>
+       <p>- The controls are designed with &lt;a&gt; tags that have an <ion-text color ="dark">href</ion-text> assigned the carousel<ion-text color ="dark"> id </ion-text>and a<ion-text color ="dark"> data-slide</ion-text> attribute set to <ion-text color ="dark">"prev"</ion-text> or <ion-text color ="dark">"next".</ion-text> Any character can be used to for next and prev controls, but Bootstrap comes with <ion-text color ="dark">glyphs </ion-text>from the <a href="https://getbootstrap.com/docs/3.3/components/"> Glyphicon Halflings</a> set. A <ion-text color="dark">glyphicon</ion-text> is inserted by using &lt;span class="glyphicon glyphicon-glyphname&gt;.</p>
+      
+      <p>The code below displays a carousel: </p>
+      
+       <ion-toolbar color="dark">
+
+         <p>&lt;div class=<ion-text color ="danger">"container"</ion-text>&gt;</p>
+         <p>&lt;div id="logoCarousel" class=<ion-text color ="danger">"carousel slide"</ion-text> data-ride=<ion-text color ="danger">"carousel"</ion-text>&gt;</p>
+         <p>&lt;ol class=<ion-text color ="danger">"carousel-indicators black"</ion-text>&gt;</p>
+         <p>&lt;li data-target=<ion-text color ="danger">"#logoCarousel"</ion-text> data-slide-to=<ion-text color ="danger">"0"</ion-text> class=<ion-text color ="danger">"active"</ion-text>&gt;&lt;/li&gt;</p>
+         <p>&lt;li data-target=<ion-text color ="danger">"#logoCarousel"</ion-text> data-slide-to=<ion-text color ="danger">"1"</ion-text>&gt;&lt;/li&gt;</p>
+         <p>&lt;/ol&gt;</p>
+         <p>&lt;div class=<ion-text color ="danger">"carousel-inner"</ion-text>&gt;</p>
+         
+         <p>&lt;div class=<ion-text color ="danger">"item active"</ion-text>&gt;</p>
+         <p>&lt;img src=<ion-text color ="danger">"https://images.freeimages.com/images/large-previews/9fc/yet-another-flower-1399208.jpg" style="width:100%"</ion-text>&gt;</p>
+          <p>&lt;div class=<ion-text color ="danger">"carousel-caption"</ion-text>&gt;</p>
+          <p>&lt;h3&gt;Caption 1&lt;/h3&gt;</p>
+          <p>&lt;/div&gt;</p>
+          <p>&lt;/div&gt;</p>
+         
+          <p>&lt;div class=<ion-text color ="danger">"item"</ion-text>&gt;</p>
+          <p>&lt;img src=<ion-text color ="danger">"http://images.freeimages.com/images/large-previews/b3d/flowers-1375316.jpg" style="width:100%"</ion-text>&gt;</p>
+          <p>&lt;div class=<ion-text color ="danger">"carousel-caption"</ion-text>&gt;</p>
+          <p>&lt;h3>Caption 2&lt;/h3&gt;</p>
+          <p>&lt;/div&gt;</p>
+          <p>&lt;/div&gt;</p>
+         
+             <p>&lt;a class=<ion-text color ="danger">"left carousel-control" href="#logoCarousel"</ion-text> data-slide="prev"&gt;</p>
+             <p>&lt;span class=<ion-text color ="danger">"glyphicon glyphicon-chevron-left"</ion-text>&lt;&gt;/span&gt;</p>
+             <p>&lt;/a&gt;</p>
+             <p>&lt;a class=<ion-text color ="danger">"right carousel-control" href="#logoCarousel"</ion-text> data-slide="next"&gt;</p>
+             <p>&lt;span class=<ion-text color ="danger">"glyphicon glyphicon-chevron-right"</ion-text>&lt;&gt;/span&gt;</p>
+             <p>&lt;/a&gt;</p>
+             <p>&lt;/div&gt;</p>
+             <p>&lt;/div&gt;</p>
+
+       </ion-toolbar>
+      
+      
+      <p>Carousel is a plugin, and is included in the Bootstrap JS file.</p>
+</ion-text>
+</ion-card-content>
+
+         
+</ion-card>
+<ion-toolbar>
+<ion-button href="/modal" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

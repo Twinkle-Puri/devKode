@@ -1,0 +1,35 @@
+<ion-header>
+
+
+        <ion-toolbar color="dark">
+            <ion-buttons slot="start">
+              <ion-back-button defaultHref="menu/userhome"></ion-back-button>
+            </ion-buttons>
+      <ion-title>Notifications</ion-title>
+    </ion-toolbar>
+
+    <ion-toolbar style="margin-top: -1px;" color="dark" >
+      <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="page" color="light">
+        <ion-segment-button value="0" (click)="selectedTab(0)">
+          <ion-label>Activity</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1" (click)="selectedTab(1)"   >
+            <ion-label>Messages</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-slides #slider (ionSlideWillChange)="moveButton()">
+    <ion-slide>
+        <h1>Notification</h1>
+    </ion-slide>
+      
+    <ion-slide>
+      <h1>Message</h1>
+    </ion-slide>
+  
+  </ion-slides>
+</ion-content>

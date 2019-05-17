@@ -1,0 +1,55 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="mongodb"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Vertical and Horizontal Scaling</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+  
+
+
+<p>In general, databases can be scaled with two different approaches, vertical and horizontal.</p>
+
+<p>Vertical</p>
+<p>In this method, you need to add more power to the existing server. For instance, you can add more CPU, RAM, and storage. This approach can be hard if you are maintaining your own server and not using cloud services like AWS.</p>
+<p>The diagram below shows the process of vertical scaling:</p>
+<ion-img src ="../../assets/image/scale1.jpg"></ion-img>
+Horizontal
+In this approach, the database can be scaled through different servers instead of only one server. This method is easier, safer, and less expensive.
+The diagram below shows the process of horizontal scaling:
+<ion-img src="../../assets/image/scale2.jpg"></ion-img>
+In general, an easy way to remember this is to think of a machine on a server rack. We add more machines across the horizontal direction and add more resources to a machine in the vertical direction:
+<ion-img src="../../assets/image/scale3.jpg"></ion-img>
+</ion-text>
+  
+ 
+  <ion-card color="warning">
+  <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+            <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+      
+        </ion-col>
+          <ion-col size ="10">
+            <p>
+                Suitable examples of horizontal scaling are MongoDB, and in general NoSQL databases, where a good example of vertical scaling is MySQL and SQL databases in general.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+        </ion-card>  
+
+</ion-card-content>        
+</ion-card>
+ 
+
+</ion-content>

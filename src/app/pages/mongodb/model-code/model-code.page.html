@@ -1,0 +1,72 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="mongodb"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Model for Codes
+        </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>We need to create a new model for the code, just like the model we created for the user. </p>
+        <p>Overall, it is similar except for the schema itself:</p>
+      
+        <ion-toolbar color="dark">
+            <p>// models/code.js
+
+            </p>
+            
+<p>const mongoose = require('mongoose');</p>
+
+<p>const codeSchema = mongoose.Schema(&#123;</p>
+   <p> _id: mongoose.Schema.Types.ObjectId,</p>
+   <p> language: String,</p>
+   <p> body: String</p>
+<p>&#125;);</p>
+
+<p>module.exports = mongoose.model('Code', codeSchema);</p>
+
+
+        </ion-toolbar>
+          <p>This will work fine for now. However, we need some relation in our code schema to link the document to a user. So, how we will know which code is created by which user (the owner of the code)?
+            </p>
+
+            <p>For that we need to add a new field in our schema, which will take the user ID referenced to the user model.</p>
+      
+            <ion-toolbar color="dark">
+                <p>user: &#123; type: mongoose.Schema.Types.ObjectId, ref: 'User' &#125;
+                  </p>
+            </ion-toolbar>
+
+
+      
+          </ion-text>
+          
+          
+          <ion-card color="warning">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="2">
+                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                  
+        </ion-col>
+          <ion-col size ="10">
+            <p>If you are using lots of relations in your schema, then you may switch to a SQL-based database such as MySQL or PostgreSQL.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+  
+
+</ion-content>

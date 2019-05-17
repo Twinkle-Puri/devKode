@@ -1,0 +1,80 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Stash</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p> The git <ion-text color="dark">stash </ion-text>command temporarily<ion-text color="dark"> caches</ion-text> any changes you've made to your working copy so you can switch to something else, and then come back and recover them later.</p> 
+
+            <p>The <ion-text color="dark">git stash </ion-text>command takes your<ion-text color="dark"> uncommitted </ion-text>changes, both staged and <ion-text color="dark">unstaged,</ion-text> and saves them for later use.</p>
+            
+             <ion-toolbar color="dark">
+            <p>git stash</p>
+             </ion-toolbar>
+            
+            <p>After stashing you're free to make any changes, create new commits, switch branches, and perform any other Git operations. Then you can come back and<ion-text color="dark"> re-apply your stash.</ion-text></p>
+            <ion-card color="warning">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col size="2">
+                          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                    
+                      </ion-col>
+                        <ion-col size ="10">
+                          <p>The stash stays locally on your Git repository. They will not be transferred to the server when you push.</p>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+                      </ion-card>          
+              <p>There are two ways to re-load (re-apply) the stashed changes: </p>
+
+                  <ion-toolbar color="dark">
+                 <p>git stash pop</p>
+                  </ion-toolbar>
+                 <p><ion-text color="dark">pop</ion-text> will remove stashed changes from the stashed state./<p>
+                 
+                  <ion-toolbar color="dark">
+
+                 <p>git stash apply</p>
+                  </ion-toolbar>
+                 
+                 
+                 <p><ion-text color="dark">apply</ion-text> applies the same stashed changes to multiple branches.</p>
+</ion-text>
+
+
+<ion-card color="warning">
+  <ion-grid>
+    <ion-row>
+        <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p>Git stash will not include untracked files by default. To do so, we should add the -u option (or --include-untracked).</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>          
+</ion-card-content>
+</ion-card>
+ <ion-toolbar>
+    <ion-button href="/merging" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>
+
+
+

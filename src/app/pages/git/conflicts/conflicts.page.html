@@ -1,0 +1,110 @@
+
+  
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="git"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+<ion-content>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Merge Conflicts</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-text>
+      <p>Let's see what happens if we change the same file in two different branches and try to<ion-text color="dark"> merge</ion-text> the branches together.</p>
+       <p> Create file1 with the following text and commit the change:</p>
+        <p>"This is the original text. We want to explain how merge conflict happens. 
+          Follow the instructions and steps correctly."</p> 
+        
+      <p>Now let's create a <ion-text color="dark">new branch ("test")</ion-text>
+         and edit file1 by adding the following text after the initial one:</p>
+      <p>"But we also want to add some text here in the branch 'test'."</p>
+        
+       <p>Again commit your changes and <ion-text color="dark">switch back</ion-text> 
+        to the <ion-text color="dark">master branch.</ion-text></p>
+       <img src="../../assets/image/conflicts1.jpg" />
+       <p>This time <ion-text color="dark">add</ion-text> the text below in file1 and commit your changes:</p>
+        <p>"But we also want to add text here in master's branch file1.txt"</p>
+        <img src="../../assets/image/conflicts2.jpg" />
+        <p>Now, we have file1 with two different variants in two different branches (<ion-text color="dark">master</ion-text> and
+           <ion-text color="dark">test</ion-text>). Let's <ion-text color="dark">merge them</ion-text> and see what will happen.</p>
+
+          <ion-toolbar color="dark">
+
+            <p>git merge test</p>
+          </ion-toolbar>
+          <p>The result of the merge is:</p>
+          <img src="../../assets/image/conflicts3.jpg" />
+
+          <p>Because there were two different versions of the file, Git failed to <ion-text color="dark">merge them together automatically.</ion-text>
+             We should fix this conflict manually and commit the change.</p>
+
+             <p> First of all, let's do a<ion-text color="dark"> git status.</ion-text> 
+              It shows which file resulted to merge conflict (it is useful when you have multiple files). 
+              It also suggests how to fix the conflict and commit or abort the merge</p>
+
+             <img src="../../assets/image/conflicts4.jpg" />
+
+             <p>When a <ion-text color="dark">merge conflict </ion-text>occurs, Git automatically adds some <ion-text color="dark">indicators </ion-text>
+              to make it easy for us to find where the<ion-text color="dark"> conflict</ion-text> occurs. 
+              These indicators are: <ion-text color="dark"><<<<<<<, =======,</ion-text> and
+              <ion-text color="dark"> >>>>>>></ion-text>.</p>
+              <p>Usually, the content before the ======= marker is the receiving branch and the part after the marker is the merging branch.</p>
+              <img src="../../assets/image/conflicts5.jpg" />
+
+
+    </ion-text>
+    <ion-card color="warning">
+        <ion-grid>
+            <ion-row>
+              <ion-col size="2">
+                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+              </ion-col>
+
+                <ion-col size ="10">
+                  <p>Besides the general rule about which order the branches will appear, after the <<<<<<< mark you can see the <ion-text color="dark">HEAD</ion-text> and <ion-text color="dark">test (your branch name)</ion-text> after the >>>>>>>, 
+                    which tells you which version is from which branch.</p>
+                </ion-col>
+              </ion-row>
+         </ion-grid>
+      </ion-card> 
+        <p>Now, it is your choice to keep only your master branch changes,
+           keep only the test branch changes, or make a brand new change, 
+           which may incorporate changes from both branches.</p>
+
+            <p>After that, delete the conflict markers <<<<<<<, =======,
+               >>>>>>> and make the changes you want in the final merge.
+                Save and exit. Finally, commit your changes.</p>
+            <img src="../../assets/image/conflicts6.jpg" />
+
+
+      
+            
+            
+            <ion-card color="warning">
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p>If you check your commit history <ion-text color="dark">(git log),</ion-text>
+            you will see that the commit from your test branch is now in your main branch (because of the merge).</p>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-card>          
+</ion-card-content>
+</ion-card>
+
+</ion-content>
+
+
+

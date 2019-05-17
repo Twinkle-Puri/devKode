@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="bootstrap"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>Scrollspy</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+
+      <p>To automatically update links in a navigation bar based on the scroll position, the <ion-text color="dark">scrollspy</ion-text> plugin can be used.</p>
+      
+      <p>To create such a scrollspy:</p>
+      <p>1. Add  <ion-text color="dark">data-spy</ion-text> attribute with value <ion-text color="dark">"scroll"</ion-text> to the scrollable area (typically &lt;body&gt;).</p>
+      <p>2. Create a navigation bar and &lt;div&gt; elements for contents of navigation bar items.</p>
+      
+      <p><ion-text color="dark">For Example: </ion-text></p>
+      
+       <ion-toolbar color="dark">
+
+          <p>&lt;body data-spy=<ion-text color="danger">"scroll"</ion-text> data-offset="20"&gt;</p>
+            <p>&lt;div class=<ion-text color="danger">"container"</ion-text>&gt;</p>
+            <p>&lt;nav class=<ion-text color="danger">"navbar navbar-inverse navbar-fixed-top"</ion-text>&gt;</p>
+            <p>&lt;div class=<ion-text color="danger">"navbar-header"</ion-text>&gt;</p>
+                <p>&lt;a class=<ion-text color="danger">"navbar-brand"</ion-text> href="#"&gt;Home&gt;/a&gt;</p>
+               <p>&lt;/div&gt;</p>
+             <p>&lt;ul class=<ion-text color="danger">"nav navbar-nav"</ion-text>&gt;</p>
+                <p>&lt;li class=<ion-text color="danger">"active"</ion-text>&lt;&gt;a href="#p0"&gt;Part 0&lt;/a&lt;&gt;/li&gt;</p>
+          <p>&lt;li&lt;&gt;a href="#p1"&gt;Part 1&lt;/a&lt;&gt;/li&gt;</p>
+          <p>&lt;li&lt;&gt;a href="#p2"&gt;Part 2&lt;/a&lt;&gt;/li&gt;</p>
+          <p>&lt;/ul&gt;</p>
+          <p>&lt;/nav&gt;</p>
+          <p>&lt;div id="p0"&gt;0: Scroll and See the Navigation Bar!&lt;/div&gt;</p>
+          <p>&lt;div id="p1"&gt;1: Scroll and See the Navigation Bar!&lt;/div&gt;</p>
+          <p>&lt;div id="p2"&gt;2: Scroll and See the Navigation Bar!&lt;/div&gt;</p>
+          <p>&lt;/div&gt;</p>
+          <p>&lt;/body&gt;</p>
+
+       </ion-toolbar>
+
+      <p>The scrollable area requires the CSS <ion-text color="dark">position </ion-text>property to be <ion-text color="dark">"relative" </ion-text>for scrollspy to work properly.</p>
+      <p><ion-text color="dark">Scrollspy </ion-text>is a plugin, and is included in the Bootstrap JS file.</p>
+</ion-text>
+</ion-card-content>
+
+          
+</ion-card>
+
+</ion-content>

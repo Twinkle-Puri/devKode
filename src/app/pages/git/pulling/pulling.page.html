@@ -1,0 +1,56 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Pulling</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>A local repository may have commits pushed by other users, who work on the repository. Get the latest updates on the project, especially when you are not the only one working on the project.</p>
+
+           <p> We can check for changes on our GitHub repository and<ion-text color="dark"> pull</ion-text> down any new changes by running:</p>
+            
+             <ion-toolbar color="dark">
+              <p>$ git pull origin master</p>
+             </ion-toolbar> 
+             <br/>
+             <ion-img src="../../assets/image/pulling1.jpg" ></ion-img>
+             <p>We can check what is different from our last commit by using the <ion-text color="dark">git diff</ion-text> command.</p>
+              <ion-toolbar color="dark"> 
+              <p>$ git diff HEAD</p>
+              </ion-toolbar>
+
+          </ion-text>
+          
+          
+          <ion-card color="warning">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="2">
+                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                  
+                </ion-col>
+                <ion-col size ="10">
+                  <p>We want the diff of our most recent commit, which we can refer to using the<ion-text color="dark"> HEAD</ion-text> pointer.</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>          
+        </ion-card-content>
+</ion-card>
+ <ion-toolbar>
+    <ion-button href="/reset" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

@@ -1,0 +1,75 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Git Commit</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>The<ion-text color="dark"> git commit</ion-text> command saves the state of your project by adding snapshots of <a [routerLink]="['/tracking']" routerLinkActive="router-link-active" >staged files</a> to the repository. </p>
+
+            <p>The git commit can include the <ion-text color="dark">-m</ion-text> flag with a message describing what we've changed.</p>
+            
+             <ion-toolbar color="dark">
+            <p>$ git commit -m "modified the button style"</p> 
+             </ion-toolbar>
+            <p>Executing <ion-text color ="dark">git status</ion-text> after a git commit verifies that tracked files are up to date.</p>
+            
+            <p>Only changes to staged files (added using the<ion-text color="dark"> git add</ion-text> command) will be added to the repository with the <ion-text color="dark">git commit</ion-text> command.</p> 
+            <p>To commit modifications for every tracked file in the repository, use the<ion-text color="dark"> git commit -a </ion-text>command: </p>
+            
+             <ion-toolbar color="dark">
+           <p> $ git commit -a -m "commit all" </p>
+             </ion-toolbar>
+            
+            
+            <p>Unfortunately, this approach does not allow specific comments for each committed file.</p>
+            
+            <p>If you want to see the history of your commits, use the <ion-text color="dark">git log </ion-text>command: </p>
+            
+             <ion-toolbar color="dark">
+               <p> $ git log </p>
+             </ion-toolbar>
+            
+            <p>This command inversely lists your commits, their dates, authors, and some other related information about each commit.</p>
+             <img src="../../assets/image/commit1.jpg" />
+             <p>After committing the changes, the next step is pushing the local repository to the Git server on a remote location (such as GitHub).</p>
+          </ion-text>
+          
+          
+          <ion-card color="warning">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="2">
+                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                  
+                </ion-col>
+                <ion-col size ="10">
+                  <p>Too many commits can result in a series of snapshots with minor changes that make reverting to a meaningful point difficult. </p>
+                  <p>You can read more on how often to commit here.</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        </ion-card>          
+      </ion-card-content>
+      </ion-card>
+      <ion-toolbar>
+        <ion-button href="/cloning" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>
+
+
+
+

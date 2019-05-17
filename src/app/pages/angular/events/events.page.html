@@ -1,0 +1,63 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="angular"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>AngularJS: Events</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+                   
+
+        <p>AngularJS includes certain directives that can be used to provide custom behavior on DOM events, such as click, dblclick, and so on.</p>
+
+        <p>Supported directives are:</p>
+        <p>ng-blur, ng-change, ng-click, ng-dblclick, ng-focus, ng-keydown, ng-keyup, ng-keypress, ng-mousedown, ng-mouseenter, ng-mouseleave, ng-mousemove, ng-mouseover, ng-mouseup.</p>
+
+        <p>Let's create an example application that will handle the button click event and count the number of clicks: </p>
+
+        <ion-toolbar color="dark">
+        <p>&lt;div ng-app="myApp" ng-controller="clickCounter"&gt;</p>
+        <p>&lt;button ng-click="count=count+1">Click me!&lt;/button&gt;</p>
+          <p>{{ count }}</p>
+          <p>&lt;/div&gt;</p>
+              <p>&lt;script&gt;</p>
+          <p>var app = angular.module('myApp', []);</p>
+          <p>app.controller('clickCounter', function($scope) &#123;</p>
+            <p>$scope.count = 0;</p>
+          <p>&#125;);</p>
+              <p>&lt;/script&gt;</p>
+          </ion-toolbar>
+        <p>Our controller initializes the<ion-text color="dark"> count</ion-text> property. Then we use the <ion-text color="dark">ng-click </ion-text>directive to handle the click event of the button and increment our <ion-text color="dark">count</ion-text> property.</p>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+      
+        </ion-col>
+        <ion-col size ="10">
+          <p>Tap <ion-text color="dark">Try It Yourself </ion-text>to see the app in action.</p>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+  <ion-toolbar>
+    <ion-button href="/to-do" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-toolbar color="dark"> 
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="bootstrap"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>Navigation Bar</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+
+
+      <p>A navigation header in a webpage is called a navigation bar.</p>
+      
+      <p>To create a navigation bar using Bootstrap:</p>
+      <p>1. Create  a  &lt;nav&gt; element with navbar and <ion-text color ="dark">navbar-default/navbar-inverse</ion-text> classes.</p>
+      <p>2. Inside the &lt;nav&gt;, create a &lt;div&gt; element with<ion-text color ="dark"> navbar-header</ion-text> class (header) and then create an &lt;a&gt; element with navbar-brand class inside this &lt;div&gt;.</p>
+      <p>3. Inside the nav, add a &lt;ul&gt; element with nav and <ion-text color ="dark">navbar-nav </ion-text>classes. The &lt;ul&gt; element should contain an &lt;li&gt; element for every navigation bar item.</p>
+      
+      <p>The <ion-text color ="dark">active/disabled </ion-text>classes can be used to highlight/disable navigation bar items.</p>
+      
+      <p>Use <ion-text color ="dark">navbar-right </ion-text> class to align items to the right of the navigation bar.</p>
+      
+      <p><ion-text color="dark">For Example:</ion-text> </p>
+      
+       <ion-toolbar color="dark">
+
+          <p>&lt;div class=<ion-text color="danger">"container"</ion-text>&gt;</p>
+          <p>&lt;nav class=<ion-text color="danger">"navbar navbar-default" </ion-text>&gt;</p>
+          <p>&lt;div class=<ion-text color="danger">"navbar-header" </ion-text>&gt;</p>
+          <p>&lt;a class=<ion-text color="danger">"navbar-brand"</ion-text> href="#"&gt;Home&lt;/a&gt;</p>
+          <p>&lt;/div&gt;</p>
+          <p>&lt;ul class=<ion-text color="danger">"nav navbar-nav"</ion-text>&gt;</p>
+          <p>&lt;li&gt;&lt;a href=<ion-text color="danger">"#"</ion-text>&gt;Page 0&lt;/a&gt;&lt;/li&gt;</p>
+          <p>&lt;li&gt;&lt;a href=<ion-text color="danger">"#"</ion-text>&gt;Page 1&lt;/a&gt;&lt;/li&gt;</p>
+          <p>&lt;li&gt;&lt;a href=<ion-text color="danger">"#"</ion-text>&gt;Page 2&lt;/a&gt;&lt;/li&gt;</p>
+          <p>&lt;/ul&gt;</p>
+                       <p>&lt;ul class=<ion-text color="danger">"nav navbar-nav navbar-right"</ion-text>&gt;</p>
+                <p>&lt;li class=<ion-text color="danger">"active"</ion-text>&gt;&lt;a href="#">Page 4&lt;/a&gt;&lt;/li&gt;</p>
+           <p>&lt;/ul&gt;</p>
+                <p>&lt;/nav&gt;</p>
+                    <p>&lt;/div&gt;</p>
+
+
+      </ion-toolbar>
+      
+      
+     <p> Adding the classes <ion-text color ="dark">navbar-fixed-top/navbar-fixed-bottom</ion-text> to the &lt;nav&gt; element fixes the navigation bar at the top/bottom of the page.</p>
+</ion-text>
+</ion-card-content>
+
+
+</ion-card>
+<ion-toolbar>
+<ion-button href="/scrollspy" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

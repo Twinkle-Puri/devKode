@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="dark">
+
+          <ion-buttons slot="start" >
+            <ion-back-button defaultHref="menu/learn" color="light"></ion-back-button>
+          </ion-buttons>
+    <ion-title>HTML Fundamentals</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar >
+    <ion-row center>
+        <ion-col size="12">
+            <div class="card--content col-lg-12 ">
+                <a [routerLink]="['/overview']" routerLinkActive="router-link-active" >
+                  <ion-icon ios="ios-code" md="md-code" color="dark"class=" circle-icon" style="zoom:2.0;"></ion-icon>
+                </a> 
+                <ion-toolbar text-center>
+                  <ion-label>Overview</ion-label>           
+                  </ion-toolbar>
+            </div>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size="6" align-self-start>
+            <div class="card--content ">
+                <a [routerLink]="['/html']" routerLinkActive="router-link-active" >
+                  <ion-icon ios="ios-list-box" md="md-list-box" color="dark"class="circle-icon" style="zoom:2.0;"></ion-icon>
+                </a> 
+                <ion-toolbar text-center>
+                  <ion-label>HTML Basics</ion-label>           
+                  </ion-toolbar>
+            </div>
+        </ion-col>
+        <ion-col size="6" align-self-end>
+            <div class="card--content ">
+                <a [routerLink]="['/html']" routerLinkActive="router-link-active" >
+                  <ion-icon ios="ios-trophy" md="md-trophy" color="dark"class="circle-icon" style="zoom:2.0;"></ion-icon>
+                </a> 
+                <ion-toolbar text-center>
+                  <ion-label>Challenges</ion-label>           
+                  </ion-toolbar>
+            </div>
+        </ion-col>
+    </ion-row>
+    <ion-row center>
+        <ion-col size="12">
+            <div class="card--content col-lg-12 ">
+                <a [routerLink]="['/html']" routerLinkActive="router-link-active" >
+                  <ion-icon ios="logo-html5" md="logo-html5" color="dark"class="circle-icon" style="zoom:2.0;"></ion-icon>
+                </a> 
+                <ion-toolbar text-center>
+                  <ion-label>HTML 5</ion-label>           
+                  </ion-toolbar>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <ion-row center>
+        <ion-col size="12">
+            <div class="card--content col-lg-12 ">
+                <a [routerLink]="['/html']" routerLinkActive="router-link-active" >
+                  <ion-icon ios="ios-medal" md="md-medal" color="dark"class=" circle-icon" style="zoom:2.0;"></ion-icon>
+                </a> 
+                <ion-toolbar text-center>
+                  <ion-label>Certificate</ion-label>           
+                </ion-toolbar>
+            </div>
+        </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-content>

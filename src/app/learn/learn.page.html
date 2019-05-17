@@ -1,0 +1,204 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-title slot="start">Learn</ion-title>
+      <a [routerLink]="['/profile']" routerLinkActive="router-link-active" slot="end">    
+          <ion-icon ios="ios-contact" md="md-contact" class="circle-icon" style="zoom:2.0;" slot="end"></ion-icon>
+        </a>
+        <a [routerLink]="['/notification']" routerLinkActive="router-link-active" slot="end">    
+          <ion-icon ios="ios-notifications" md="md-notifications" class="circle-icon" style="zoom:2.0;" slot="end"></ion-icon>
+        </a>
+        <a routerLink="#" slot="end" > 
+          <ion-icon ios="ios-more" md="md-more"  class="circle-icon" style="zoom:2.0;" slot="end"></ion-icon>
+        </a>
+          
+      </ion-toolbar>
+      </ion-header>
+
+<ion-content padding>
+    <ion-card>   
+        <ion-card-title>My Courses</ion-card-title>
+          <section class="card">
+              <div>
+                  <ion-toolbar text-center style="margin-top:15px;">
+                    <ion-label style="margin-left:40px;">No Course Selected</ion-label>
+                    <ion-button  [routerLink]="['/available-course']" routerLinkActive="router-link-active" expand="block" color="success" >Start Learning Now</ion-button>
+                  </ion-toolbar> 
+              </div>
+          </section>
+    </ion-card>
+    
+  
+  
+
+ <ion-card>    
+    <ion-card-title >Web Development</ion-card-title>
+      <section class="card">
+    
+          <div class="card--content col-lg-2">
+              <a [routerLink]="['/html']" routerLinkActive="router-link-active" >
+                <img src="../../assets/image/html.png" /> 
+              </a>             
+        
+            <ion-item text-center>
+              <ion-label>HTML</ion-label>
+            </ion-item>
+          </div>
+          <div class="card--content col-lg-2 ">
+            <img src="../../assets/image/css.png"  />
+            <ion-item text-center>
+                <ion-label>CSS</ion-label>
+              </ion-item>
+          </div>
+          <div class="card--content  col-lg-2 ">
+            <img src="../../assets/image/js.png"  /> 
+            <ion-item text-center>
+                <ion-label>JavaScript</ion-label>
+              </ion-item>
+          </div>
+          <div class="card--content  col-lg-2 ">
+            <img src="../../assets/image/jquery.png"  />
+            <ion-item text-center>
+                <ion-label>JQuery</ion-label>
+              </ion-item>
+          </div>
+          <div class="card--content  col-lg-2 ">
+              <a [routerLink]="['/angular']" routerLinkActive="router-link-active" >
+
+            <img src="../../assets/image/angular.png" /> 
+            <ion-item text-center>
+                <ion-label>Angular</ion-label>
+              </ion-item>
+              </a>
+            </div>
+          <div class="card--content col-lg-2 ">
+              <a [routerLink]="['/bootstrap']" routerLinkActive="router-link-active" >
+
+            <img src="../../assets/image/bootstrap.png" /> 
+            <ion-item text-center>
+                <ion-label>Bootstrap</ion-label>
+              </ion-item>
+            </a>
+          </div>
+        </section>
+ </ion-card>
+
+  <ion-card>   
+    <ion-card-title >Latest Additions</ion-card-title>
+      <section class="card">
+        <div class="card--content">
+            <a [routerLink]="['/mongodb']" routerLinkActive="router-link-active" >
+            <img src="../../assets/image/mongodb.jpg"/> 
+            <ion-item text-center>
+                <ion-label>MongoDB</ion-label>
+              </ion-item>
+            </a>
+        </div>
+        <div class="card--content">
+            <img src="../../assets/image/react.jpg"/> 
+                     <ion-item text-center>
+                <ion-label>React Element</ion-label>
+              </ion-item>
+
+        </div>
+        <div class="card--content">
+            <img src="../../assets/image/rest api.png" /> 
+            <ion-item text-center>
+                <ion-label>RESTful API</ion-label>
+              </ion-item>
+
+        </div>
+  
+      </section>
+</ion-card>
+    
+  <ion-card>
+    <ion-card-title >Programming Languages</ion-card-title>
+      <section class="card">
+          <div class="card--content">
+              <img src="../../assets/image/c++.png" /> 
+              <ion-item text-center>
+                  <ion-label>C++</ion-label>
+                </ion-item>
+            
+          </div>
+          <div class="card--content">
+              <img src="../../assets/image/java.png" /> 
+              <ion-item text-center>
+                  <ion-label>Java</ion-label>
+                </ion-item>
+          </div>
+          
+          <div class="card--content">
+              <img src="../../assets/image/csharp.png" />
+              <ion-item text-center>
+                  <ion-label>C# </ion-label>
+                </ion-item>
+          </div>
+          <div class="card--content  col-xl-2 col-lg-3 col-md-4">
+              <img src="../../assets/image/python.png"/>
+              <ion-item text-center>
+                  <ion-label>Python 3</ion-label>
+                </ion-item>
+          
+
+          </div>
+          <div class="card--content col-12 col-xl-2 col-lg-3 col-md-4">
+              <img src="../../assets/image/c.png"/>
+              <ion-item text-center>
+                  <ion-label>C</ion-label>
+                </ion-item>
+          </div>
+          <div class="card--content col-12 col-xl-2 col-lg-3 col-md-4">
+              <img src="../../assets/image/php.png"/>
+              <ion-item text-center>
+                  <ion-label>PHP</ion-label>
+                </ion-item>
+          </div>
+          </section>
+    </ion-card>
+
+  <ion-card>
+    <ion-card-title >Data Science</ion-card-title>
+      <section class="card">
+          <div class="card--content ">
+              <img src="../../assets/image/python.png"/>
+              <ion-item>
+                  <ion-label>Python 3</ion-label>
+                </ion-item>
+          </div>
+          <div class="card--content ">
+              <img src="../../assets/image/sql.png"/>
+              <ion-item>
+                  <ion-label>SQL</ion-label>
+                </ion-item>
+          </div>
+
+          <div class="card--content ">
+              <a [routerLink]="['/machine']" routerLinkActive="router-link-active" >
+              <img src="../../assets/image/machine learning.png"/>
+              <ion-item>
+                  <ion-label>Machine Learning</ion-label>
+                </ion-item>
+                </a>
+          </div>
+        </section>
+ </ion-card>
+
+
+<ion-card>   
+    <ion-card-title>Development Essentials</ion-card-title>
+      <section class="card">
+          <div class="card--content">
+            <a [routerLink]="['/git']" routerLinkActive="router-link-active" >
+            
+              <img src="../../assets/image/git.png"/>
+              <ion-item text-center>
+                  <ion-label>Git</ion-label>
+                </ion-item>  
+            </a>
+          </div>
+      </section>
+</ion-card>
+
+
+</ion-content>

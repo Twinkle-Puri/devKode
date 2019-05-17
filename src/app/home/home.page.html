@@ -1,0 +1,54 @@
+<ion-app>
+  <ion-content color="dark">
+    <h1>DevKode</h1>
+    <ion-slides direction="horizontal" pager="true" show-pager="true" pager>
+      <ion-slide class="step-one">
+        <div class="diag">
+            <ion-icon ios="ios-school" md="md-school" color="light" class="circle-icon" style="zoom:7.0;"></ion-icon>
+        </div>
+        <div class="topic">
+          <h2>Learn</h2>
+          <p>Thousands of coding topics right at your fingerstips! </p>
+        </div>
+      </ion-slide>
+  
+      <ion-slide class="step-two">
+          <div class="diag">
+            <ion-icon ios="ios-flash" md="md-flash" color="light" class="circle-icon" style="zoom:7.0;"></ion-icon>
+              
+          </div>
+          <div class="topic">
+            <h2>Play</h2>
+            <p>Challenge peers and compete in interactive code battles </p>
+          </div>
+      </ion-slide>
+  
+      <ion-slide class="step-three">
+          <div class="diag">
+            <ion-icon ios="ios-chatboxes" md="md-chatboxes" color="light" class="circle-icon" style="zoom:7.0;"></ion-icon>
+          </div>
+          <div class="topic">
+            <h2>Discuss</h2>
+            <p>Ask qustions and give answers in our Q&A Discussion Forums </p>
+          </div>
+      </ion-slide>
+  
+      <ion-slide class="step-four">
+          <div class="diag" >
+              <ion-icon ios="ios-person" md="md-person" color="light" class="circle-icon" style="zoom:7.0;"></ion-icon>
+            </div>
+            <div class="topic">
+              <h2>Your Profile</h2>
+              <p>Build and showcase your unique coder profile on DevKode </p>
+            </div>
+      </ion-slide>
+    </ion-slides>
+    <ion-toolbar  color="dark" style=" text-align: center;">
+        <ion-button color="success">CREATE NEW ACCOUNT</ion-button>
+        <br/>
+        <a [routerLink]="['/menu/learn']" routerLinkActive="router-link-active" >SIGN IN </a>
+    
+
+    </ion-toolbar>
+  </ion-content>
+</ion-app>

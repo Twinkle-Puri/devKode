@@ -1,0 +1,59 @@
+      <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>The Git Version Control System</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+          <p>One of the most popular version control systems is<ion-text color="dark"> Git,</ion-text> a distributed<a [routerLink]="['/version']" routerLinkActive="router-link-active" > VCS.</a> </p>
+          <p>Git is a mature, actively maintained, open source project compatible with many operating systems and IDEs.</p>
+          <p>Git is different from other version control systems by its way of recording changes. Other systems add changes to a database, where Git records changes as a <ion-text color="dark">stream of snapshots.</ion-text></p>
+          
+          <p>Git has another advantage - it is<ion-text color="dark"> distributed.</ion-text></p>
+          <p>Rather than having only one single place for the full version history of a project, every developer's working copy of the code is also a repository that can contain the full history of all changes.</p>
+          
+          <p>Git was created by <a href="https://en.m.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> in 2005 for development of the <a href="https://github.com/torvalds/linux">Linux kernel,</a> with other kernel developers contributing to its initial development.</p>
+          <img src="../../assets/image/vsc.jpg"/>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p> The name "git" was given by Linus Torvalds when he wrote the very
+            first version. He described the tool as "the stupid content tracker"
+            and the name as (depending on your way):</p>
+            <p> - random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of "get" may or may not be relevant.</p>
+            <p>- stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.</p>
+               <p>- "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.</p>
+               <p>- "goddamn idiotic truckload of sh*t": when it breaks</p>
+               
+               <p>Reference: The <a href="https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README">readme file</a> of the Git source code.</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>          
+      </ion-card-content>
+  </ion-card>
+  <ion-toolbar>
+    <ion-button href="/rep" color="success" slot="end">Continue</ion-button>
+  
+  </ion-toolbar>
+</ion-content>
+
+
+

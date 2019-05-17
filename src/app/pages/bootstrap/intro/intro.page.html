@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="bootstrap"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+<ion-card-title> Bootstrap 3:Introduction</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+      <p><ion-text color="dark">Bootstrap</ion-text> is the most widely used front-end framework for faster and easier web development. Just a basic knowledge of HTML and CSS is enough to get started.</p>
+      <p>What's more Bootstrap 3 is mobile-first and has built-in features for making responsive web designs that allow web sites to automatically adjust themselves to look good on devices of all sizes.</p>
+      
+      <p>There are two ways to use Bootstrap on a web site:</p>
+       <p>- Download Bootstrap from getbootstrap.com</p>
+       <p>- Include Bootstrap from a CDN</p>
+      
+      <p>We follow the second approach in our lessons. The code below shows how to include Bootstrap 3 in a web site using MaxCDN (Content Delivery Network): </p>
+      
+       <ion-toolbar color="dark"> 
+
+          <p>&lt;!DOCTYPE html&gt;</p>
+         <p>&lt;html&gt;</p>
+            <p>&lt;head&gt;</p>
+            <p>&lt;meta charset=<ion-text color="danger">"utf-8"</ion-text>&gt;</p>
+             <p>&lt;!-- Responsive -- &gt;</p>
+             <p>&lt;meta name=<ion-text color="danger">"viewport" </ion-text>content=<ion-text color="danger">"width=device-width, initial-scale=1"</ion-text>&gt;</p>
+             <p>&lt;!-- CSS -- &gt;</p>
+             <p>&lt;link rel=<ion-text color="danger">"stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</ion-text>&gt;</p>
+             <p>&lt;!-- jQuery -- &gt;</p>
+             <p>&lt;script src=<ion-text color="danger">"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"</ion-text>&gt;&lt;/script&gt;</p>
+             <p>&lt;!-- JavaScript -- &gt;</p>
+             <p>&lt;script src=<ion-text color="danger">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</ion-text>&gt;&lt;/script&gt;</p>
+             <p>&lt;/head&gt;</p>
+              <p>&lt;body&gt;</p>
+              <p>&lt;/body&gt;</p>
+         <p>&lt;/html&gt;</p>
+         
+       </ion-toolbar>
+      
+      <p>As you can see from the code above, Bootstrap uses a <ion-text color="dark">CSS </ion-text>and a <ion-text color="dark">JS</ion-text> file.</p>
+      <p>The viewport meta tag tells the browser to render the width of the page at the width of the screen. This is done to make the page responsive on different screen sizes.</p>
+      <p>We have also included <ion-text color="dark">JQuery</ion-text>, as The Bootstrap JS relies on it.</p>
+  </ion-text>
+  
+  
+  <ion-card color="warning">
+    <ion-grid>
+<ion-row>
+  <ion-col size="2">
+      <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+    </ion-col>
+  <ion-col size ="10">    
+    <p>Don't forget to add <ion-text color="dark">&lt;!DOCTYPE html&gt;</ion-text> because Bootstrap uses HTML elements and CSS properties that require the HTML5 doctype.</p>
+    
+  </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card>          
+</ion-card-content>
+</ion-card>
+<ion-toolbar>
+<ion-button href="/grid" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

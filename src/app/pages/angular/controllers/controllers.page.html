@@ -1,0 +1,76 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="angular"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>AngularJS: Controllers</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+          
+
+          <p>An AngularJS <ion-text color="dark">controller</ion-text> is a JavaScript function that maintains the application data and behavior.</p>
+
+          <p>The <ion-text color="dark">ng-controller</ion-text> directive is used to define a controller. Let's see an example of a controller:</p>
+
+
+          <ion-toolbar color="dark">
+          <p>&lt;div ng-app="myApp" ng-controller="myController"&gt;</p>
+           <p>&#123; &#123;message&#125; &#125;</p>
+          <p>&lt;/div&gt;</p>
+         <p> &lt;script&gt;</p>
+         <p> var ngApp = angular.module('myApp', []);</p>
+
+          <p>ngApp.controller("myController", function ($scope) &#123;</p>
+          <p>  $scope.message = "Hello World!";   </p>     
+          <p>&#125;);</p>
+          <p>&lt;/script&gt;</p>
+        </ion-toolbar>
+          <p>We gave a name to our application using the <ion-text color="dark">ng-app</ion-text> directive. Then, we used that name to create a <ion-text color="dark">module</ion-text>. The <ion-text color="dark">module</ion-text> is a container for the application <ion-text color="dark">controllers. </ion-text>Controllers always belong to a module.</p> 
+
+          <p>After creating a module, we add a controller function using the controller() method where the first parameter is the name of the controller and second parameter is a function for the controller.</p>
+
+          <p><ion-text color="dark">$scope</ion-text> is a built-in object that contains application data and methods. We have initialized the message property using <ion-text color="dark">$scope</ion-text>, and used it in our view.</p>
+
+          <p>AngularJS creates and injects a different <ion-text color="dark">$scope</ion-text> object to each controller in an application. The data and methods attached to <ion-text color="dark">$scope</ion-text> inside one controller cannot be accessed in another controller.</p>
+
+          <p>Controllers are used to:</p>
+          <p>- Set up the initial state of the <ion-text color="dark">$scope</ion-text> object.</p>
+          <p>- Add behavior to the <ion-text color="dark">$scope</ion-text> object.</p>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+        <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p>An AngularJS application consists of:</p>
+          <p><ion-text color="dark">View:</ion-text> Essentially the DOM that the user sees.</p>
+          <p><ion-text color="dark">Model: </ion-text>The data shown to the user in the view.</p>
+          <p><ion-text color="dark">Controller:</ion-text> The business logic behind views.</p>
+          
+          <p>The model is stored in the <ion-text color="dark">$scope</ion-text>, so that controllers, directives, and expressions can access it.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>          
+</ion-card-content>
+</ion-card>
+ <ion-toolbar>
+    <ion-button href="/events" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

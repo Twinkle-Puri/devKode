@@ -1,0 +1,75 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="angular"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>AngularJS: Directives</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+         <p> <ion-text color="dark">Directives</ion-text> are similar to HTML attributes and allow a specified behavior to be attached to the DOM elements.</p>
+
+          <p>The <ion-text color="dark">ng-app</ion-text> directive initializes an AngularJS application. </p>
+          <p>The <ion-text color="dark">ng-model</ion-text> directive binds an HTML element to a property.</p>
+          <p>The <ion-text color="dark">ng-init </ion-text>directive initializes application data. </p>
+          
+          <p><ion-text color="dark">For example: </ion-text></p>
+          
+          <ion-toolbar color="dark">
+
+            <p> &lt;div <ion-text color="success">ng-app ng-init</ion-text>="<ion-text color="danger">celsius=0;diff=32"&gt;</ion-text></p>
+               <p>Celsius: &lt;input type="text" ng-model="celsius"&gt;</p>
+               <p>Fahrenheit: &#123; &#123; celsius*1.8+diff &#125; &#125;</p>
+            <p> &lt;/div&gt;</p>
+          </ion-toolbar>
+          
+          <p>The code above creates a simple Celsius to Fahrenheit converter. We have declared two properties using the ng-init directive. We have also used ng-model to bind the textbox with the celsius property. The expression calculates the corresponding Fahrenheit value in the paragraph element.</p>
+          
+          <p>Another useful directive is ng-repeat. It repeats an HTML template for each item in the specified collection. </p>
+          
+          <p><ion-text color="dark">For example: </ion-text></p>
+          
+          <ion-toolbar color="dark">
+
+            <p>&lt;div ng-app ng-init="students=['David','Steve','Bob']"&gt;</p>
+              <p>&lt;ol&gt;</p>
+               <p> &lt;li ng-repeat="name in students"&gt;</p>
+                <p>&#123; &#123;name &#125; &#125; </p>
+               <p> &lt;/li&gt;</p>
+                <p>&lt;/ol&gt;</p>
+                <p>&lt;/div&gt;</p>
+          </ion-toolbar>
+          
+         <p> We created a list item for each item in the students collection.</p>
+  
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+            <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            
+          </ion-col>
+          <ion-col size ="10">
+            <p>You can use a directive multiple times.</p>  
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+</ion-card>
+<ion-toolbar>
+  <ion-button href="/controllers" color="success" slot="end">Continue</ion-button>
+</ion-toolbar>
+
+</ion-content>

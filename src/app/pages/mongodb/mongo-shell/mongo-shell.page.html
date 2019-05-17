@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="mongodb"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>MongoDB Shell</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+      
+
+     <p> Here you can find the simple ways to traverse and view the documents of a MongoDB.</p>
+      
+      <p>In your terminal, write mongo to start the Mongo environment: </p>
+      
+      
+       <ion-toolbar color="dark">
+          <p> $ mongo</p>
+       </ion-toolbar>
+      
+      <p>Too see all the available databases type:</p> 
+      
+      <ion-toolbar color="dark">
+          <p> > show dbs </p>
+      </ion-toolbar>
+     
+      
+      <p>To select a database, enter: </p>
+      
+      <ion-toolbar color="dark">
+     <p> > use databaseName</p>
+      </ion-toolbar>
+
+      <p>To see all the available collections:</p> 
+      
+      <ion-toolbar color="dark">
+      
+      <p>> show collections</p>
+      </ion-toolbar>
+      <p>To see all the available documents (entries) of a certain collection:</p> 
+      
+      <ion-toolbar color="dark">
+      
+      <p>> db.collectionName.find()</p>
+      </ion-text>
+</ion-text>
+
+
+<ion-card color="warning">
+<ion-grid>
+  <ion-row>
+    <ion-col size="2">
+        <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+  
+    </ion-col>
+      <ion-col size ="10">
+        <p>You can find the list of available operations on a collection<a href="https://docs.mongodb.com/manual/reference/mongo-shell/#basic-shell-javascript-operations"> here.</a></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    </ion-card>  
+
+</ion-card-content>        
+</ion-card>
+</ion-content>

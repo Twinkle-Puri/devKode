@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="bootstrap"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Grid System</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-text>
+         
+
+          <p>Bootstrap's responsive <ion-text color ="dark">grid system</ion-text> is built on the CSS Flexible Box Layout module (flexbox) which allows up to 12 columns on a page. On a big screen, the 12 columns are organized side by side, but on a small screen, they will be stacked on top of each other.</p>
+          
+          <p>If 12 individual columns are not needed, some columns can be grouped to create wider columns.</p>
+          
+          <p>The Bootstrap 3 grid system has four classes based on screen sizes:</p>
+          <p><ion-text color ="dark">xs</ion-text> screens less than 768px wide (phones)</p>
+          <p><ion-text color ="dark">sm </ion-text>screens greater than or equal to 768px wide (tablets)</p>
+          <p><ion-text color ="dark">md </ion-text>screens greater than or equal to 992px wide (small laptops)</p>
+          <p><ion-text color ="dark">lg</ion-text> screens greater than or equal to 1200px wide (laptops and desktops)</p>
+          
+          <p>To create a Bootstrap grid:</p>
+          <p>1. Create a container element, i.e. a &lt;div&gt; element with class <ion-text color="dark">container or container-fluid</ion-text>.</p>
+          <p>2. For each row, create a &lt;div&gt; element with class <ion-text color="dark">row.</ion-text></p>
+          <p>3. For each column, create a &lt;div&gt; element with class <ion-text color="dark">col-*-# </ion-text>where * is the grid class and # is the number of columns to be used from the 12 available columns.</p>
+          
+          <p>For example, the code below displays a simple Bootstrap grid with two rows having two differently sized columns each: </p>
+          
+           <ion-toolbar color="dark">
+              <p>&lt;div class=<ion-text color="danger">"container"</ion-text>&gt;</p>
+                <p>&lt;div class=<ion-text color="danger">"row"</ion-text>&gt;</p>
+                  <p>&lt;div class=<ion-text color="danger">"col-xs-6"</ion-text>&gt;6 cols&lt;/div&gt;</p>
+                <p>&lt;div class=<ion-text color="danger">"col-xs-6"</ion-text>&gt;6 cols&lt;/div&gt;</p>
+                <p>&lt;/div&gt;</p>
+              <p>&lt;div class=<ion-text color="danger">"row"</ion-text>&gt;</p>
+                  <p>&lt;div class=<ion-text color="danger">"col-xs-4"</ion-text>&gt;4 cols&lt;/div&gt;</p>
+                <p>&lt;div class=<ion-text color="danger">"col-xs-8"</ion-text>&gt;8 cols&lt;/div&gt;</p>
+                <p>&lt;/div&gt;</p>
+            <p>&lt;/div&gt;</p>
+          </ion-toolbar>
+          <p>The <ion-text color="dark">container</ion-text> class is for a responsive, fixed width container.</p>
+          <p><ion-text color="dark">container-fluid</ion-text> is a full-width container. </p>
+          <p>While the <ion-text color="dark">container</ion-text> element is for wrapping site contents, rows are the containers for columns. The number of columns within each row should add up to 12.</p>
+      </ion-text>
+    </ion-card-content>
+
+        
+</ion-card>
+<ion-toolbar>
+<ion-button href="/typography" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

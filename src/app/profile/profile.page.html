@@ -1,0 +1,55 @@
+<ion-header>
+
+
+    <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="menu/userhome"></ion-back-button>
+        </ion-buttons>
+  
+</ion-toolbar>
+
+<ion-toolbar color="dark" style="margin-top: -1px;" >
+  <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="page" color="light">
+    <ion-segment-button value="0" (click)="selectedTab(0)">
+      <ion-label>CODES</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="1" (click)="selectedTab(1)"   >
+        <ion-label>POSTS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2" (click)="selectedTab(2)"   >
+        <ion-label>ACTIVITY</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="3" (click)="selectedTab(3)"   >
+        <ion-label>SKILLS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="4" (click)="selectedTab(4)"   >
+        <ion-label>BADGES</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+<ion-slides #slider (ionSlideWillChange)="moveButton()">
+<ion-slide>
+    <h1>Codes</h1>
+</ion-slide>
+  
+<ion-slide>
+  <h1>Posts</h1>
+</ion-slide>
+
+<ion-slide>
+  <h1>Activity</h1>
+</ion-slide>
+
+<ion-slide>
+  <h1>SKILLS</h1>
+</ion-slide>
+<ion-slide>
+  <h1>Badges</h1>
+</ion-slide>
+
+</ion-slides>
+</ion-content>

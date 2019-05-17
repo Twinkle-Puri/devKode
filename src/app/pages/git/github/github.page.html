@@ -1,0 +1,63 @@
+
+  
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="git"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+    Git vs GitHub
+    </ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-text>
+      <p> It is important to know the difference between Git and GitHub.</p>
+        
+       <p> <ion-text color="dark">Git</ion-text> is a<a [routerLink]="['/vsc']" routerLinkActive="router-link-active" > version control system</a> for managing your source code history.</p>
+      <p><ion-text color ="dark">GitHub</ion-text> is a hosting service for your Git repositories.</p>
+        
+      <p> Let's create a new repository at GitHub:</p>
+      <p>1) Go to https://www.github.com and signup/login.</p>
+      <p>  2) Click on the "+" button at top right corner and select "New repository"</p>
+      
+      <img src="../../assets/image/github1.jpg"/>
+      <p>3) Choose a repository name. (You can leave other fields blank for now)</p>
+      <img src="../../assets/image/github2.jpg"/>
+      <p>4) You will be redirected automatically to a page, where you can find all the required information to continue your next steps.</p>
+      <img src="../../assets/image/github3.jpg" />
+    </ion-text>
+    
+    
+    <ion-card color="warning">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            
+          </ion-col>
+      <ion-col size ="10">
+        <p>There are other hosting services like GitHub, such as Bitbucket. </p>
+        
+        <p><ion-text color="dark"> More lessons on Git are coming soon, so stay tuned!</ion-text> </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>          
+</ion-card-content>
+</ion-card>
+                    <ion-toolbar>
+                      <ion-button href="/tracking" color="success" slot="end">Continue</ion-button>
+                    
+                    </ion-toolbar>
+</ion-content>
+
+
+
+

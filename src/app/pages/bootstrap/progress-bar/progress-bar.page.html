@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="bootstrap"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>Progress Bars </ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+
+
+      <p>A basic Bootstrap progress bar can be created as follows:</p>
+      <p>1. Create a &lt;div&gt; element with<ion-text color="dark"> progress</ion-text> class.</p>
+      <p>2. Inside the progress div just created, create a&lt;div&gt; element with<ion-text color="dark"> progress-bar</ion-text> class and <ion-text color="dark">role="progressbar"</ion-text> property. Set its CSS width property to the progress value of the progress bar. For example,<ion-text color="dark"> style="width:59%"</ion-text>.</p>
+      
+      <p>The <ion-text color="dark">value, min, max </ion-text>attributes of the general HTML progress bar should be <ion-text color="dark">aria-valuenow, aria-valuemin, aria-valuemax attributes</ion-text>, respectively.</p>
+      
+      <p>Additional styling can be added with these classes: <ion-text color="dark">progress-bar-info, progress-bar-success, progress-bar-warning, progress-bar-danger, progress-bar-striped</ion-text></p>
+      
+      <p>To create a<ion-text color="dark"> stacked</ion-text> progress bar, place multiple progress bars in the same <ion-text color="dark">&lt;div class="progress"&gt;</ion-text> element.</p>
+      
+      <p>The code below displays some Bootstrap styled progress bars:</p>
+      
+       <ion-toolbar color="dark">
+
+         <p>&lt;div class=<ion-text color="danger">"container"</ion-text>&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"progress"</ion-text>&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"progress-bar"</ion-text> role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100" style="width:59%">59% Complete!&lt;/div&gt;</p>
+         <p>&lt;/div&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"progress"</ion-text>&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"progress-bar progress-bar-success"</ion-text> role="progressbar" style="width:50%"&gt;50&lt;/div&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"progress-bar progress-bar-warning" </ion-text>role="progressbar" style="width:25%"&gt;25&lt;/div&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"progress-bar progress-bar-danger"</ion-text> role="progressbar" style="width:10%"&gt;10&lt;/div&gt;</p>
+         <p>&lt;/div&gt;</p>
+         <p>&lt;/div&gt;</p> 
+       </ion-toolbar>
+      
+      <p>The <ion-text color="dark">aria-*</ion-text> attributes are not required, but when available, the<ion-text color="dark"> A</ion-text>ccessible <ion-text color="dark">R</ion-text>ich <ion-text color="dark">I</ion-text>nternet<ion-text color="dark"> A</ion-text>pplications technology can be interpreted by assistive technologies, such as screen readers.</p>
+</ion-text>
+</ion-card-content>
+         
+</ion-card>
+<ion-toolbar>
+<ion-button href="/jumbotron" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

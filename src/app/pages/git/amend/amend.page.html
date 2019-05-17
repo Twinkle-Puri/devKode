@@ -1,0 +1,54 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Amend</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>The <ion-text color="dark">git commit --amend </ion-text>command is a convenient way to modify the most recent commit.</p>
+            <p>It lets you combine staged changes with the previous commit instead of creating an entirely new commit.</p>
+            
+            <p>It can also be used to simply edit the previous commit message:</p>
+            
+             
+            <ion-toolbar color="dark">
+            <p>git commit<ion-text color="medium"> --amend -m </ion-text>"updated commit message"</p>
+            </ion-toolbar>
+            
+            <p>The <ion-text color="dark">-m</ion-text> option allows you to pass in a new message for the latest commit.</p>
+</ion-text>
+
+
+<ion-card color="warning">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+            <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            
+          </ion-col>
+          <ion-col size ="10">
+            <p>Amending does not just alter the most recent commit, it replaces it entirely, meaning the amended commit will be a new entity.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+  <ion-toolbar>
+    <ion-button href="/stash" color="success" slot="end">Continue</ion-button>
+    
+  </ion-toolbar>
+  
+</ion-content>

@@ -1,0 +1,90 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+  
+    <ion-card-header>
+      <ion-card-title>Tracking Files</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+          <p>In general, files in a repository can have the following statuses:</p>
+          <p>1) Not tracked</p>
+          <p>  2) Staged</p>
+          <p>3) Committed</p>
+            
+          <p> To find out the actual status of files in a repository, the <ion-text color="dark">git status</ion-text> command is used.</p>
+          <p> Let's say we have created a file readme.txt in our repository.</p>
+          <p>Running git status will have the following output:</p>
+          
+            <img src="../../assets/image/tracking1.jpg"/>
+            <p>As you can see the file <ion-text color="dark">readme.txt</ion-text> is <ion-text color="dark">untracked.</ion-text></p>
+            <p><ion-text color="dark">Untracked</ion-text> It means that the file is not being tracked by Git for changes. We should explicitly say which files it should follow/track.</p>
+            <p>The <ion-text color="dark">git add 'file name'</ion-text> command tells Git to track the file. This step is called <ion-text color="dark">staging.</ion-text></p>
+            <p>Let's add our <ion-text color="dark">readme.txt </ion-text>file:</p>
+
+        <img src ="../../assets/image/tracking2.jpg" />
+        <p>If you don't want Git to track some specific files, you can "ignore" them.</p>
+        <p>That is done using the .gitignore file. Anything listed in the <ion-text color="dark">.gitignore</ion-text> file is ignored by Git and won't be visible in the repository.</p>
+        
+        <p>Let's create the <ion-text color="dark">.gitignore</ion-text>, as well as a sample<ion-text color="dark"> password.txt</ion-text> file containing some sensitive data which we don't want to be publicly visible in the repository:</p> 
+        
+        <ion-toolbar color="dark">
+        <p>$ touch .gitignore</p>
+        <p>$ touch password.txt</p>
+        </ion-toolbar>
+
+
+        <ion-card color="warning">
+            <ion-grid>
+                <ion-row>
+                  <ion-col size="2">
+                      <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                  </ion-col>
+                  <ion-col size ="10">
+                      <p>The<ion-text color="dark"> touch</ion-text> command is the easiest way to create new, empty files in Unix/Linux.</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card>          
+          <p>Now write a sample text inside the <ion-text color="dark">password.txt</ion-text> and edit the content of <ion-text color="dark">.gitignore</ion-text> adding the file name ("password.txt") we want to be ignored.</p>
+            <img src="../../assets/image/tracking3.jpg " />
+            <p>Running <ion-text color="dark">git status</ion-text> shows that only the <ion-text color="dark">.gitignore</ion-text> file is untracked.</p>
+              <p>The files listed here are in the <ion-text color="dark">Staging Area, </ion-text>and they are not in our repository yet. To add them to the repository, we need to <ion-text color="dark">commit</ion-text> them. Check out the next lesson to learn how to commit changes to a Git repository.</p>
+
+        </ion-text>
+        
+        
+        <ion-card color="warning">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="2">
+                <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+              </ion-col>
+              <ion-col size ="10">
+                
+                <p>You can add as many file as you want inside your <ion-text color="dark">.gitignore</ion-text> file and write comments (#comment) to remember the reason they are ignored.
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>          
+      </ion-card-content>
+</ion-card>
+<ion-toolbar>
+  <ion-button href="/commit" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+</ion-content>
+
+
+

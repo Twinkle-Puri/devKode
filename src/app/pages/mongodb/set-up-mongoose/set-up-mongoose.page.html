@@ -1,0 +1,59 @@
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="mongodb"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Setup Mongoose</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>To use <ion-text color="dark">Mongoose,</ion-text> first, install the package and then require it. To install, use the following command: </p>
+
+        <ion-toolbar color="dark">
+            <p>$ npm install --save  <ion-text color="dark">mongoose </ion-text></p>
+        </ion-toolbar>
+        <p>To use it in a module or file you need to import it with the following command: </p>
+        <ion-toolbar color="dark">
+          <p>const mongoose = require('mongoose'); </p>
+        </ion-toolbar>
+      
+
+        <p>After installing and importing, you have one more thing to do: connect Mongoose to the MongoDB.</p>
+
+        <p> For that, you need to know the URL of your MongoDB server and the following command:</p>
+
+        <ion-toolbar color="dark">
+            <p>mongoose.connect('mongodb://127.0.01:27017/your_database_name'); </p>
+        </ion-toolbar>
+        <p>Here "your_database_name" can be anything. But you shouldn't change it if you want to keep your data. For example, let's say you named your database "RESTapiDB". MongoDB will store all your schemas under this database. Then let's say you create 100 entries and then change the database name of your application. In this case, you will no longer have access to the entries until you change the name back.</p>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+        <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p>This case may be useful, for example, if you need to have a different database for testing and production.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>          
+</ion-card-content>
+</ion-card>
+<ion-toolbar>
+  <ion-button href="/add-database-setup" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

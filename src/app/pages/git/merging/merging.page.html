@@ -1,0 +1,87 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Merging Branches</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>Let's create and commit a few files on the<ion-text color="dark"> master branch</ion-text> (main branch). The <ion-text color="dark">touch</ion-text> command below will create 5 text files, with names <ion-text color="dark"> file1.txt, file2.txt,</ion-text> etc.</p>
+
+           <ion-toolbar color="dark">
+             <p>touch file ( 1..5 ).txt </p>
+              <p>  git add .</p>
+              <p>   git commit -m "add files 1 to 5"</p>
+           </ion-toolbar>
+           <p>Now let's create and switch to our new branch:</p>
+           <ion-toolbar color="dark">
+           <p>git checkout -b test </p>
+           </ion-toolbar>
+            <p>At this point, this branch is an exact copy of the master branch, but every modification, addition, or removal is done in the context of this new "test" branch. Let's add new files and remove a couple of already existing files and then commit the changes.</p>
+            <ion-toolbar color="dark">
+                <p>touch file(6..10).txt </p>
+                <p>git rm file3.txt</p>
+                <p>git rm file4.txt</p> 
+                <p></p>
+                <p>git add .</p>
+                <p>git commit -m "add new files, remove 3&4"</p>
+            </ion-toolbar>
+                </ion-text>
+                <ion-card color="warning">
+                    <ion-grid>
+                        <ion-row>
+                          <ion-col size="2">
+                              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                        
+                          </ion-col>
+                            <ion-col size ="10">
+                              <p> We could just use the<ion-text color="dark"> rm</ion-text> command, but it is better to use the <ion-text color="dark">git rm,</ion-text> which will not only remove the actual files from disk but will also stage the removal of the files for us.</p>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                      </ion-card>  
+                      <p>Now, we have 2 branches, master and test. 
+                        We are on the test branch which contains some new files and lacks some of the files from the master branch because we removed them.
+                         Let's switch to the master branch and finally merge them together.</p>
+                          
+                          <ion-toolbar color="dark">
+                          <p>git checkout master </p>
+                          <p>git merge test</p>
+                          </ion-toolbar>
+                          <p><ion-text color="dark">git merge test </ion-text>tells the Git to merge the test branch into the current branch (the master branch in our example).</p>     
+                          
+                          
+                          <ion-card color="warning">
+                            <ion-grid>
+                              <ion-row>
+                                <ion-col size="2">
+                                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+                                  
+                                </ion-col>
+                                <ion-col size ="10">
+                                  <p>In order to remove a branch that you don't need anymore, use "git branch -d test" command.</p>
+                                  
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                          </ion-card>          
+                        </ion-card-content>
+                        </ion-card>
+ <ion-toolbar>
+   <ion-button href="/conflicts" color="success" slot="end">Continue</ion-button>
+   
+  </ion-toolbar>
+  
+</ion-content>
+
+

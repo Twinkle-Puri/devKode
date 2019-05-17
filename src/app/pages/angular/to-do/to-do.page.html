@@ -1,0 +1,95 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="angular"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>AngularJS: A To-Do App</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+          
+
+          <p>Let's build a simple To-Do app using AngularJS.</p>
+          <p>We will start by creating the HTML:</p>
+          
+           <ion-toolbar color="dark">
+
+            <p>&lt;div ng-controller="todoList"&gt;</p>
+            <p>&lt;span&gt;Items: &#123; &#123;todos.length&#125; &#125;&lt;/span&gt;</p>
+                <p>&lt;ul&gt;</p>
+                    <p>&lt;li ng-repeat="todo in todos"&gt;</p>
+                        <p>&lt;label class="checkbox"&gt;</p>
+                            <p>&lt;input type="checkbox" ng-model="todo.done"&gt;</p>
+                  <p>&lt;span class="done-{{todo.done}}">{{todo.text}}&gt; &lt;/span&gt;</p>
+                                  <p>&lt;/label&gt;</p>
+                                      <p>&lt;/li&gt;</p>
+                                          <p>&lt;/ul&gt;</p>
+                                              <p>&lt;form ng-submit="addTodo()"&gt;</p>
+<p>&lt;input type="text" ng-model="todoText" size="30"placeholder="add new todo here"&gt;</p>
+              <p>&lt;input type="submit" value="add"&gt;</p>
+                  <p>&lt;/form&gt;</p>
+                      <p>&lt;/div&gt;</p>
+        </ion-toolbar>
+
+        <p>We created a list for all our<ion-text color="dark"> todo </ion-text> 
+          items in the <ion-text color="dark">todos</ion-text>
+           collection using the <ion-text color="dark">ng-repeat</ion-text> 
+           directive. Each<ion-text color="dark"> todo</ion-text> 
+           item will have <ion-text color="dark">text</ion-text>
+            and<ion-text color="dark"> done </ion-text>
+            properties and is displayed as a checkbox and a span containing the text.</p>
+        <p> We have also created a form with a textbox and a submit button to add new items.</p>
+          
+        <p>Now it's time to add the functionality. </p>
+          
+          <ion-toolbar color="dark">
+          <p>&lt;script&gt;</p>
+          <p>var app = angular.module('todoApp', []);</p>
+                  
+          <p>app.controller('todoList', function($scope) &#123;</p>
+           <p> $scope.todos = [ &lt;text:'Learn AngularJS', done:true&gt;,</p>
+              <p>&#23;text:'build an AngularJS app', done:false&gt;];</p>
+          
+            <p>$scope.addTodo = function() &#123;</p>
+              <p>if($scope.todoText !== '') &#123; </p>
+                <p>$scope.todos.push(&#123;text:$scope.todoText, done:false&#125;);</p>
+                <p>$scope.todoText = '';</p>
+                <p> &#125;</p>
+              <p> &#125;;</p>
+          <p> &#125;);</p>
+         <p>&lt; /script&gt;</p>
+          </ion-toolbar>
+          <p>We initialize our <ion-text color="dark">todos</ion-text> 
+            list with some default values and create the
+             <ion-text color="dark">addTodo </ion-text>
+             function that will be called when the add button is clicked.</p>
+          
+          <p>Tap <ion-text color="dark">Try It Yourself</ion-text>
+             to see the whole code in action.</p>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            </ion-col>
+          <ion-col size ="10">
+            <p><ion-text color="dark">TASK:</ion-text> Customize the To-Do app, add an option to remove items from the list, and share your creations in the Comments section below.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+  
+</ion-content>

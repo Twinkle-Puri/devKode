@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="git"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>Cloning and Pushing</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+     <p> After <a [routerLink]="['/commit']" routerLinkActive="router-link-active" >committing</a> the changes, the next step is pushing the local repository to the Git server on a remote location (such as GitHub or Bitbucket).</p>
+
+     <p> After creating a remote repository we have the following options:</p>
+     <p> 1) To download (clone) the repository and start making changes.</p>
+      <p>2) To initialize a local repository and then connect it with the remote one.</p>
+      
+     <p> The<ion-text color="dark"> clone</ion-text> command is used to download a remote repository: </p>
+      
+       <ion-toolbar color="dark"> 
+      <p>$ git clone https://www.github.com/user/project_name.git</p>
+       </ion-toolbar>
+
+       <ion-card color="warning">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="2">
+                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            
+              </ion-col>
+                <ion-col size ="10">
+                  <p>
+                      Cloning should be done at the very start of the project.
+                  </p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+              </ion-card>
+              
+              <p>If you have already<a [routerLink]="['/rep']" routerLinkActive="router-link-active" > initialized a local repository,</a> you can connect it to the remote one using the following command:</p>
+              <ion-toolbar color="dark">    
+              <p>$ git remote add origin https://www.github.com/user/project_name.git</p>
+              </ion-toolbar>
+
+                <ion-card-header>
+                    <ion-card-title>Cloning and Pushing</ion-card-title>
+                </ion-card-header>
+              
+              <p>After making our local changes and commits, its time to push the changes to the remote repository.</p>
+              <p>The <ion-text color="dark">push</ion-text> command tells Git where to put our commits.</p>
+                  
+                   <ion-toolbar color="dark">
+                  <p>$ git push -u origin master</p>
+                   </ion-toolbar>
+                  
+                  <p>The name of our remote is <ion-text color="dark">origin</ion-text> and the default local branch name is <ion-text color="dark">master. </ion-text></p>
+
+  </ion-text>
+  
+  
+  <ion-card color="warning">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p>The <ion-text color="dark">-u</ion-text> tells Git to remember the parameters, so that next time we can simply run<ion-text color="dark"> git push</ion-text> and Git will know what to do.</p>
+      <p>Also, keep in mind that it is not mandatory to push your project to a remote location. You are free to work on your project alone without pushing it anywhere, if you need to.</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card>          
+</ion-card-content>
+</ion-card>
+<ion-toolbar >
+<ion-button href="/pulling" color="success" slot="end">Continue</ion-button>
+</ion-toolbar>
+
+</ion-content>

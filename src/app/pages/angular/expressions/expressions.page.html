@@ -1,0 +1,58 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="angular"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>AngularJS: Expressions js</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p>An <ion-text color="dark">expression</ion-text> is usually wrapped inside double curly braces, such as <ion-text color="dark"> &#123; &#123; expression &#125;&#125;.</ion-text> AngularJS evaluates the expression and produces a result. Expressions can contain literals, operators, and properties.</p>
+            <p>Let's create an AngularJS app with an expression:</p>
+            <ion-toolbar color ="dark">
+            <p> &lt;!DOCTYPE HTML&gt;</p>
+            <p> &lt;html ng-app&gt;</p>
+            <p> &lt;head&gt;</p>
+              <p> &lt;script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" &gt;&lt;/script&gt;</p>
+            <p>&lt;/head&gt;</p>
+            <p>&lt;body&gt;</p>
+            <p> &#123;&#123; 2+2 &#125;&#125; </p>
+            <p>&lt;/body&gt;</p>
+            <p> &lt;/html&gt;</p> 
+            </ion-toolbar>
+            <p>The code above produces the output <ion-text color="dark">4</ion-text>, because AngularJS evaluates the expression and returns the result.</p>
+            <p>Notice the <ion-text color="dark">ng-app </ion-text>attribute in the &lt;html&gt; tag. This is called a <ion-text color="dark">directive,</ion-text> and it defines that this is an AngularJS application. If we remove that directive, the expression will not be evaluated.</p>
+            <p>There are a number of other <ion-text color="dark">directives,</ion-text> which allow AngularJS to attach specified behavior to HTML elements. We will learn about them in the coming lessons.</p>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+              
+            </ion-col>
+            <ion-col size ="10">
+              <p>AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.</p>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+ <ion-toolbar>
+    <ion-button href="/binding" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

@@ -1,0 +1,129 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="mongodb"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>MongoDB Model </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+          <p>All the setup is done. We have a working MongoDB and Mongoose is connected to our database. Now we need to go back to our project and start writing some JavaScript again!</p>
+          <p>To be able to store data in our database, we need Mongoose models. You need to define how you are going to store objects in the database, then create a model (JavaScript Object) based on that. This model will have some functions which will help you to add, update, delete, merge, fetch, order, and perform many more operations on that dataset.</p>
+
+          
+  <ion-card color="warning">
+      <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+                <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+            </ion-col>
+              <ion-col size ="10">
+                <p>You can read more on the models in the official<a href="https://docs.mongodb.com/"> MongoDB </a>and <a href="https://mongoosejs.com/docs/guide.html">Mongoose</a> documentation.</p>
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-card>          
+      <p>Now, let's remember our project structure from here. We need to add the "models" directory in our project so that it will look like this:</p>
+        <p>├── api</p>
+         <p>   │      ├── models</p>
+         <p>   │      │      ├── code.js</p>
+          <p>  │      │      └── user.js</p>
+           <p> │      └── routes</p>
+           <p> │               ├── codes.js</p>
+           <p> │               └── users.js</p>
+           <p> ├── app.js</p>
+            <p>├── package.json</p>
+            <p>└── server.js</p>
+           <p> 3 directories, 7 files</p>
+            
+            <p>A model is just a JavaScript Object that is built over Mongoose. Let's start with the user.js file. First of all, you need to require the Mongoose. Next we need the schema:</p>
+
+
+            <ion-toolbar color="dark">
+            
+             <p> // models/user.js</p>
+  <p>const mongoose = require('mongoose');</p>
+  
+  <p>const userSchema = mongoose.Schema(&#123;</p>
+  <p>&#125;);</p>
+
+             </ion-toolbar>
+
+<p>We just passed a JavaScript object to the method schema, where we should define what our model looks like.</p>
+<p>Let's add ID, email, name, age, and country:</p>
+
+<ion-toolbar color="dark">
+    
+                       
+  <p>// models/user.js</p>
+  <p>const userSchema = mongoose.Schema(&#123;</p>
+   <p> _id: mongoose.Schema.Types.ObjectId,</p>
+   <p> email: String,</p>
+   <p> name: String,</p>
+    <p>age: Number,</p>
+    <p>country: String</p>
+  <p>&#125;);</p>
+
+</ion-toolbar>
+
+<ion-card color="warning">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+        
+          </ion-col>
+            <ion-col size ="10">
+              <p>It is a convention to use _id. Also, the mongoose.Schema.Types.ObjectId generates random unique IDs for each document.</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+          </ion-card> 
+         <p> Now that we have the schema, we need to create a model and export it to be able to use it in other modules.</p>
+
+  <p>The model function takes two arguments: first, the name that we are going to use internally, and second, the schema we created:</p>
+
+ 
+  <ion-toolbar color="dark">
+    
+    <p>// models/user.js</p>
+   <p> module.exports = mongoose.model('User', userSchema);</p>
+
+                         </ion-toolbar>
+
+
+    </ion-text>
+    
+    
+    <ion-card color="warning">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            
+          </ion-col>
+          <ion-col size ="10">
+            <p>The schema is like the layout of the object we want to use, in which the model is the object itself based on that schema.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+  </ion-card>
+  <ion-toolbar>
+    <ion-button href="/model-code" color="success" slot="end">Continue</ion-button>
+    
+  </ion-toolbar>
+  
+</ion-content>

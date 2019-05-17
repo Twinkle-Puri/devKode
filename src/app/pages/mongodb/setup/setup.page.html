@@ -1,0 +1,68 @@
+
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="mongodb"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Install and Setup MongoDB</ion-card-title>
+    </ion-card-header>
+  
+
+
+    <ion-card-content>
+      <ion-text>
+        <p>In this lesson, we are going to setup MongoDB on our system. 
+          You can find the official installation guide               
+          <a href="https://docs.mongodb.com/manual/installation/">
+          here.</a></p>
+        <p>After the installation, you can use the following command to start the<ion-text color="dark"> mongod </ion-text>server: </p>
+        <ion-toolbar color="dark">
+          <p>$ sudo service mongod start </p>
+        </ion-toolbar>
+        <p>To shut down the server: </p>
+
+          <ion-toolbar color="dark">
+            <p>$ sudo service mongod stop </p>
+          </ion-toolbar>
+          <p>And finally to restart the server: </p>
+
+
+            <ion-toolbar color="dark">
+                <p>$ sudo service mongod restart </p>
+              </ion-toolbar>
+              <p>To start               <a [routerLink]="['/mongo-shell']" routerLinkActive="router-link-active" >
+                mongo shell </a>on the same host machine as the mongod, use the --host command line option to specify the localhost address and port that the mongod listens on. For example:</p>
+	
+              <ion-toolbar color="dark">
+                  <p>$ mongo --host 127.0.0.1:27017</p>
+              </ion-toolbar>
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+              
+            </ion-col>
+            <ion-col size ="10">
+              <p>By default the mongod is running on <ion-text color="dark">127.0.0.1:27017 (localhost:27017) </ion-text>and you can use it to create your DB with tools like Mongoose.</p>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>          
+  </ion-card-content>
+</ion-card>
+ <ion-toolbar>
+    <ion-button href="/mongoose" color="success" slot="end">Continue</ion-button>
+
+  </ion-toolbar>
+
+</ion-content>

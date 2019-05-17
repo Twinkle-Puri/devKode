@@ -1,0 +1,80 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="menu/learn"></ion-back-button>
+          </ion-buttons>
+      <ion-title>Machine Learning</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <div>
+                <ion-card>
+                  <ion-card-header>
+                       <a [routerLink]="['/intro-machine']" routerLinkActive="router-link-active" >
+    
+                        <ion-card-title>What is Machine Learning?</ion-card-title>
+      </a>
+                  </ion-card-header>
+                </ion-card>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div>
+                <ion-card>
+                  <ion-card-header>
+                      <a [routerLink]="['/types']" routerLinkActive="router-link-active" >
+                    <ion-card-title>Types of Machine Learning</ion-card-title>
+                      </a>
+                  </ion-card-header>
+                
+                  </ion-card>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">
+              <div>
+                <ion-card>
+                  <ion-card-header>
+                      <a [routerLink]="['/neural']" routerLinkActive="router-link-active" >
+  
+                    <ion-card-title>Neural Networks</ion-card-title>
+                    </a>
+                  </ion-card-header>
+                </ion-card>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div>
+                <ion-card>
+                  <ion-card-header>
+                      <a [routerLink]="['/maths']" routerLinkActive="router-link-active" >
+                        <ion-card-title>Teaching Math using Neural</ion-card-title>
+                      </a>  
+                  </ion-card-header>
+                </ion-card>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col size="6">
+            <div>
+              <ion-card>
+                <ion-card-header>
+                    <a [routerLink]="['/patterns']" routerLinkActive="router-link-active" >
+  
+                  <ion-card-title>A Simple neural Network to Recognize Patterns </ion-card-title>
+                  </a>
+                </ion-card-header>
+              </ion-card>
+            </div>
+          </ion-col>
+
+          </ion-row>
+</ion-grid>
+</ion-content>
+  

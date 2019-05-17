@@ -1,0 +1,73 @@
+
+    <ion-header >
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="angular"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>AngularJS: Data Binding</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+         <p> One of the main concepts of AngularJS is<ion-text color="dark"> data binding.</ion-text></p>
+          <p>Let's look at the following AngularJS app to understand how data binding works:</p>
+          
+           <ion-toolbar color ="dark">
+
+              <p>&lt;!DOCTYPE HTML&gt;</p>
+              <p>&lt;html <ion-text color="success">ng-app</ion-text>&gt;</p>
+              <p>&lt;head&gt;</p>
+              <p>&lt;script <ion-text color="success">src=</ion-text><ion-text color="danger">"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"&gt; &lt;/script&gt;</ion-text>;</p>
+              <p>&lt;/head&gt;</p>
+              <p>&lt;body&gt;</p>
+              <p>&lt;label>Name:&lt;/label&gt;</p>
+              <p>&lt;input <ion-text color="success">type</ion-text>="text" <ion-text color="danger">ng-model</ion-text>=<ion-text color="danger">
+                  "name"</ion-text> <ion-text color="success">placeholder</ion-text>=<ion-text color="danger">
+                    "Enter a name"</ion-text>&gt; </p>
+              <p>&lt;hr /&gt;</p>
+              <p>&lt;h2&gt; Hello &#123;&#123; name &#125; &#125; ! &lt;/h2&gt;</p>
+              <p>&lt;/body&gt;</p>
+              <p>&lt;/html&gt;</p>
+           </ion-toolbar>
+          
+          
+          
+         <p> The code above creates a textbox. As soon as you start typing in the textbox, the input is automatically shown in the &lt;h2&gt; element.</p>
+          
+          <p><ion-text color="dark">ng-model</ion-text> is a directive, which binds the HTML element to a property. In the code above, we bind the input to a property named name. Then we use the property in the expression:<ion-text color="dark"> &#123;&#123; name &#125; &#125;</ion-text> </p>
+          
+          <p>Data binding allows automatic synchronization of data between the <ion-text color="dark">model</ion-text> and the <ion-text color="dark">view.</ion-text></p>
+          
+          <p>The <ion-text color="dark">view</ion-text> is basically the DOM that the user sees.</p>
+          <p>The <ion-text color="dark">model</ion-text> is the data shown to the user in the view and with which the user interacts.</p>
+  
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+              
+            </ion-col>
+            <ion-col size ="10">
+            <p>Data binding makes the view a projection of the model at all times. When the model changes, the view reflects the change, and vice versa.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+        </ion-card>          
+      </ion-card-content>
+      </ion-card>
+ <ion-toolbar>
+   <ion-button href="/directives" color="success" slot="end">Continue</ion-button>
+   
+  </ion-toolbar>
+  
+</ion-content>

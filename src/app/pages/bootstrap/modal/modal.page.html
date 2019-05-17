@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="bootstrap"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title> Modal</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+
+
+      <p>A modal is a popup window or dialog box which will be displayed on top of the current page. Modals are easily created using Bootstrap.
+      <p>To create a modal, start by creating a trigger for the modal. For example, a &lt;button&gt; element with <ion-text color="dark">data-toggle="modal" </ion-text>property and data-target="#myModal" where myModal is the id of the modal 
+        &lt;div&gt; that pops up on clicking this button.</p>
+      
+      <p>Other requirements for the modal are:</p>
+      <p>A &lt;div&gt; of class<ion-text color="dark"> modal</ion-text> to hold the entire modal.</p>
+      <p>A &lt;div&gt; of class <ion-text color="dark">modal-dialog </ion-text> to hold the modal dialog.</p>
+      <p>A &lt;div&gt; of class <ion-text color="dark">modal-content</ion-text> to hold the content of the modal.</p>
+      <p>A &lt;div&gt; of class <ion-text color="dark">modal-header</ion-text> to hold the header of the modal in which a heading element of class modal-title holds the title of the modal.</p>
+      <p>A &lt;div&gt; of class <ion-text color="dark">modal-body </ion-text>to hold the body of the modal.</p>
+      <p>A &lt;div&gt; of class <ion-text color="dark">modal-footer</ion-text> to hold the footer of the modal.</p>
+                          
+      <p>The code below displays a modal when a button is clicked: </p>
+                              
+       <ion-toolbar color="dark">
+
+         <p>&lt;div class= <ion-text color="danger">"container"</ion-text>&gt;</p>
+         <p>&lt;button type=<ion-text color="danger">"button"</ion-text> data-toggle=<ion-text color="danger">"modal"</ion-text> data-target=<ion-text color="danger">"#myModal"</ion-text>>Open Modal&lt;/button&gt;</p>
+         <p>&lt;div id=<ion-text color="danger">"myModal"</ion-text> class="modal"&gt;</p>
+         <p>&lt;div class=<ion-text color="danger">"modal-dialog"</ion-text>&gt;</p>
+              <p>&lt;div class=<ion-text color="danger">"modal-content"</ion-text>&gt;</p>
+                <p>&lt;div class=<ion-text color="danger">"modal-header"</ion-text>&gt;</p>
+                  <p>&lt;h3 class=<ion-text color="danger">"modal-title"</ion-text>&gt;Header&lt;/h3&gt;</p>
+                    <p>&lt;button data-dismiss=<ion-text color="danger">"modal"</ion-text>&gt;X&lt;/button&gt;</p>
+                    <p>&lt;/div&gt;</p>
+                 <p>&lt;div class=<ion-text color="danger">"modal-body"</ion-text>&gt;Body&lt;/div&gt;</p>
+                  <p>&lt;div class=<ion-text color="danger">"modal-footer"</ion-text>&gt;Footer&lt;/div&gt;</p>
+                  <p>&lt;/div&gt;</p>
+               <p>&lt;/div&gt;</p>
+             <p>&lt;/div&gt;</p>
+           <p>&lt;/div&gt;</p>
+         
+       </ion-toolbar>
+    <p>  Modals is a plugin, and is included in the Bootstrap JS file.</p>
+</ion-text>
+</ion-card-content>
+
+
+      
+</ion-card>
+<ion-toolbar>
+<ion-button href="/affix" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

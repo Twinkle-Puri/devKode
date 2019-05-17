@@ -1,0 +1,60 @@
+
+  
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="git"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Reset & Checkout</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-text>
+        <p> You can use <ion-text color="dark">diff</ion-text> to look at changes within files that have already been <a [routerLink]="['/tracking']" routerLinkActive="router-link-active" > staged.</a></p>
+           <p> Running <ion-text color="dark">git diff --staged </ion-text> will show the changes you just staged.</p>
+            
+            <p>A stage can also be reset using the reset command:</p>
+            
+             <ion-toolbar color="dark">
+            <p>git reset 'file name' </p>
+             </ion-toolbar>
+            
+            <p>This  removes the file from the staged status, meaning that all the changes will still remain in the file.</p> 
+            
+            <p>To reset the file to the latest committed version, the <ion-text color="dark"> checkout</ion-text> command can be used: </p>
+            
+             <ion-toolbar color="dark">
+            
+            <p>git checkout -- 'file name'</p>
+             </ion-toolbar>
+  
+      </ion-text>
+      
+      
+      <ion-card color="warning">
+        <ion-grid>
+          <ion-row>
+        <ion-col size="2">
+          <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+          
+        </ion-col>
+        <ion-col size ="10">
+          <p>It is good practice to regularly run<ion-text color="dark"> git diff</ion-text> and reset files you accidentally changed.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>          
+</ion-card-content>
+</ion-card>
+<ion-toolbar>
+  <ion-button href="/branches" color="success" slot="end">Continue</ion-button>
+  
+</ion-toolbar>
+
+</ion-content>

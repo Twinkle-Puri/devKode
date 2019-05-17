@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="dark">
+
+          <ion-buttons slot="start" >
+            <ion-back-button defaultHref="menu/learn" color="light"></ion-back-button>
+          </ion-buttons>
+    <ion-title>My Courses</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-toolbar color="light">
+    <ion-label style="font-size:15px;">AVAILABLE COURSES</ion-label>
+  </ion-toolbar>
+
+  <ion-list lines="full">
+    <a [routerLink]="['/html']" routerLinkActive="router-link-active" >
+      <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/image/html.png" />
+      </ion-avatar>
+      <ion-label>HTML Fundamentals</ion-label>
+    </ion-item>
+    </a>
+  </ion-list>
+  <ion-list lines="full">
+      <a [routerLink]="['/css']" routerLinkActive="router-link-active" >
+        <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/image/css.png" />
+        </ion-avatar>
+        <ion-label>CSS Fundamentals</ion-label>
+      </ion-item>
+      </a>
+    </ion-list>
+
+    <ion-list lines="full">
+        <a [routerLink]="['/bootstrap']" routerLinkActive="router-link-active" >
+          <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/image/bootstrap.png" />
+          </ion-avatar>
+          <ion-label>Bootrap 3</ion-label>
+        </ion-item>
+        </a>
+      </ion-list>
+      
+    
+</ion-content>

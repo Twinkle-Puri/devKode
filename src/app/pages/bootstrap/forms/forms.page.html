@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="bootstrap"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>Forms & Inputs</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+      
+
+      <p>A form is for receiving user input. It can include inputs, multi-line text inputs, selectable lists, radio buttons, and checkboxes. </p>
+      <p>A vertical form is the default in Bootstrap and can be created as follows:</p>
+     <p> 1. Wrap the entire form in a<ion-text color="dark"> &lt;form&gt; </ion-text>element.</p>
+      <p>2. Use a <ion-text color="dark"> &lt;div&gt; </ion-text>of class form-group to wrap input, textarea, and select lists elements. Use a form-control class for all textual input elements.</p>
+      <p>3. To add a checkbox or radio button, create a <ion-text color="dark"> &lt;label&gt;</ion-text> with corresponding <ion-text color="dark">  &lt;input&gt; </ion-text>inside it. They can be placed in a<ion-text color="dark">  &lt;div&gt;</ion-text> of class checkbox or radio respectively.</p>
+      <p>4. To display a checkbox or radio button group in a single line, do not use a <ion-text color="dark"> &lt;div&gt;</ion-text> and add checkbox-inline or radio-inline class to all the<ion-text color="dark">  &lt;label&gt;</ion-text> elements in the group.</p>
+      
+      <p>The code below displays a form with input, textarea, select lists, inline radio buttons, and a checkbox: </p>
+      
+      <ion-toolbar color="dark">
+        <p>&lt;div class=<ion-text color="danger"> "container"</ion-text>&gt;</p>
+        <p>&lt;form&gt;</p>
+        <p>&lt;div class=<ion-text color="danger"> "form-group"</ion-text>&gt;</p>
+        <p>&lt;label for=<ion-text color="danger"> "email:"</ion-text>&gt;Email:&lt;/label&gt;</p>
+        <p>&lt;input type=<ion-text color="danger"> "email"</ion-text> class=<ion-text color="danger"> "form-control"</ion-text> id=<ion-text color="danger">"email"</ion-text>&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;div class=<ion-text color="danger">"form-group"</ion-text>&gt;</p>
+        <p>&lt;label for=<ion-text color="danger">"info"</ion-text>&gt;Info:&lt;/label&gt;</p>
+        <p>&lt;textarea class=<ion-text color="danger">"form-control"</ion-text> rows="3" id="info"&lt;&gt;/textarea&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;div class=<ion-text color="danger">"form-group"</ion-text>&gt;</p>
+        <p>&lt;label for=<ion-text color="danger">"sellist"</ion-text>&lt;Select One:&gt;/label&gt;</p>
+        <p>&lt;select class=<ion-text color="danger">"form-control" </ion-text>id=<ion-text color="danger">"sellist"</ion-text>&gt;</p>
+        <p>&lt;option&gt;A&lt;/option&gt;</p>
+        <p>&lt;option&gt;B&lt;/option&gt;</p>
+        <p>&lt;/select&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;label class=<ion-text color="danger">"radio-inline"</ion-text>&gt;&lt;input type=<ion-text color="danger">"radio"</ion-text> name="rb"&gt;Radio 1&lt;/label&gt;</p>
+        <p>&lt;label class=<ion-text color="danger">"radio-inline"</ion-text>&gt;&lt;input type=<ion-text color="danger">"radio" </ion-text>name="rb"&gt;Radio 2&lt;/label&gt;</p>
+        <p>&lt;div class=<ion-text color="danger">"checkbox"</ion-text>&gt;</p>
+        <p>&lt;label&gt;&lt;input type=<ion-text color="danger">"checkbox"</ion-text>&gt;Checkbox&lt;/label&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/form&gt;</p>
+        <p>&lt;/div&gt;</p>
+      </ion-toolbar>
+
+
+     <p> Bootstrap supports HTML5 input types email (as used in code above),<ion-text color="dark"> text, password, datetime, datetime-local, date, month, time, week, number, url, search, tel, and color.</ion-text></p>
+
+    <p>An inline form includes class<ion-text color="dark"> form-inline </ion-text>in the &lt;form&gt; element and displays all form elements in a single line. An inline form transforms into a vertical form for screens less than 768px wide.</p>
+</ion-text>
+</ion-card-content>
+
+
+</ion-card>
+<ion-toolbar>
+<ion-button href="/dropdowns" color="success" slot="end">Continue</ion-button>
+
+</ion-toolbar>
+
+</ion-content>

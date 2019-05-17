@@ -1,0 +1,198 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="menu/learn"></ion-back-button>
+        </ion-buttons>
+
+    <ion-title>Git</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <div>
+              <ion-card>
+                <ion-card-header>
+                     <a [routerLink]="['/version']" routerLinkActive="router-link-active" >
+    
+                      <ion-card-title>What is Version Control?</ion-card-title>
+    </a>
+                </ion-card-header>
+              </ion-card>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div>
+              <ion-card>
+                <ion-card-header>
+                    <a [routerLink]="['/vsc']" routerLinkActive="router-link-active" >
+                  <ion-card-title>The Git VSC</ion-card-title>
+                    </a>
+                </ion-card-header>
+              
+                </ion-card>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <div>
+              <ion-card>
+                <ion-card-header>
+                    <a [routerLink]="['/rep']" routerLinkActive="router-link-active" >
+
+                  <ion-card-title>Initializing a Git Repository</ion-card-title>
+                  </a>
+                </ion-card-header>
+              </ion-card>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div>
+              <ion-card>
+                <ion-card-header>
+                    <a [routerLink]="['/github']" routerLinkActive="router-link-active" >
+                      <ion-card-title>Git vs GitHub</ion-card-title>
+                    </a>  
+                </ion-card-header>
+              </ion-card>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col size="6">
+          <div>
+            <ion-card>
+              <ion-card-header>
+                  <a [routerLink]="['/tracking']" routerLinkActive="router-link-active" >
+
+                <ion-card-title>Tracking Files</ion-card-title>
+                </a>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div>
+            <ion-card>
+              <ion-card-header>
+                  <a [routerLink]="['/commit']" routerLinkActive="router-link-active" >
+
+                <ion-card-title>Git Commit</ion-card-title>
+                  </a>
+              </ion-card-header>
+            
+              </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+      <ion-col size="6">
+        <div>
+          <ion-card>
+            <ion-card-header>
+                <a [routerLink]="['/cloning']" routerLinkActive="router-link-active" >
+
+              <ion-card-title>Cloning and Pushing</ion-card-title>
+                </a>
+            </ion-card-header>
+                       </ion-card>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div>
+          <ion-card>
+            <ion-card-header>
+                <a [routerLink]="['/pulling']" routerLinkActive="router-link-active" >
+
+              <ion-card-title>Pulling</ion-card-title>
+                </a>
+            </ion-card-header>
+          
+            </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+
+<ion-row>
+    <ion-col size="6">
+      <div>
+        <ion-card>
+          <ion-card-header>
+              <a [routerLink]="['/reset']" routerLinkActive="router-link-active" >
+            <ion-card-title>Reset & Checkout</ion-card-title>
+              </a>
+          </ion-card-header>
+                     </ion-card>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div>
+        <ion-card>
+          <ion-card-header>
+              <a [routerLink]="['/branches']" routerLinkActive="router-link-active" >
+            <ion-card-title>Branches</ion-card-title>
+              </a>
+          </ion-card-header>
+        
+          </ion-card>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+  <ion-col size="6">
+    <div>
+      <ion-card>
+        <ion-card-header>
+            <a [routerLink]="['/amend']" routerLinkActive="router-link-active" >
+          <ion-card-title>Amend</ion-card-title>
+            </a>
+        </ion-card-header>
+                   </ion-card>
+    </div>
+  </ion-col>
+  <ion-col size="6">
+    <div>
+      <ion-card>
+        <ion-card-header>
+            <a [routerLink]="['/stash']" routerLinkActive="router-link-active" >
+          <ion-card-title>Stash</ion-card-title>
+            </a>
+        </ion-card-header>
+      
+        </ion-card>
+    </div>
+  </ion-col>
+</ion-row>
+<ion-row>
+<ion-col size="6">
+  <div>
+    <ion-card>
+      <ion-card-header>
+          <a [routerLink]="['/merging']" routerLinkActive="router-link-active" >
+        <ion-card-title>Merging Branches</ion-card-title>
+          </a>
+      </ion-card-header>
+                 </ion-card>
+  </div>
+</ion-col>
+<ion-col size="6">
+  <div>
+    <ion-card>
+      <ion-card-header>
+          <a [routerLink]="['/cloning']" routerLinkActive="router-link-active" >
+        <ion-card-title>Merge Conflicts</ion-card-title>
+          </a>
+      </ion-card-header>
+    
+      </ion-card>
+  </div>
+</ion-col>
+</ion-row>
+
+
+      </ion-grid>
+</ion-content>

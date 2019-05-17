@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="menu/learn"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+  <ion-card-title>What is MongoDB?   </ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  <ion-text>
+    <p><ion-text color="dark">MongoDB</ion-text> is a free and open-source cross-platform document-oriented database. Classified as a <ion-text color="dark">NoSQL</ion-text> database, it uses JSON-like documents with schemas.</p>
+    <ion-img src="../../assets/image/mongo1.jpg"></ion-img>
+    <p>It has some major differences from SQL databases like MySQL and SQLite.
+       In cases where we have few or no relations and mostly reads rather than writes, 
+       it is recommended to use NoSQL databases because they are easier to deal with, 
+       have no strict schemas, and allow different documents in the same collection.
+        NoSQL databases are usually easier to <a [routerLink]="['/scale']" routerLinkActive="router-link-active" >
+          scale horizontally,</a> which is easier and safer than ones scaled vertically.</p>
+</ion-text>
+
+
+
+<ion-card color="warning">
+<ion-grid>
+  <ion-row>
+    <ion-col size="2">
+        <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+    </ion-col>
+      <ion-col size ="10">
+        <p>You can learn the basic terminology of MongoDB<a [routerLink]="['/sql-mongo']" routerLinkActive="router-link-active" >
+          here</a></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    </ion-card> 
+    <p>MongoDB has some drawbacks. It is not always the best solution, and big platforms and services usually use both NoSQL and SQL databases in different parts of their platforms.</p>
+    <p>MongoDB provides a CLI tool to create and manage the database, and different platforms use packages to work with that database. For example, Mongoose is used to work with the database directly from Node.js</p>         
+    <ion-card color="warning">
+        <ion-grid>
+            <ion-row>
+              <ion-col size="2">
+                  <ion-icon ios="ios-alert" md="md-alert" style="zoom:2.0;"></ion-icon>
+            
+              </ion-col>
+                <ion-col size ="10">
+                  <p>One of the major benefits of the MongoDB is that it runs quickly on low-end computers, so startups and other young companies prefer to use it because it helps them keep costs low.</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+              </ion-card> 
+            </ion-card-content>
+          </ion-card>
+
+
+
+
+
+
+<ion-toolbar>
+<ion-button href="/setup" color="success" slot="end">Continue</ion-button>
+</ion-toolbar>
+</ion-content>
+
+
+
+
+
